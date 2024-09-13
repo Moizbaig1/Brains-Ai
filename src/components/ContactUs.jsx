@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
 import toast from "react-hot-toast";
 import globe from "../../public/images/globe.png";
 import purpleGradient from "../../public/svgs/purpleGradient.svg";
 import Gradient1 from "../../public/svgs/gradient1.svg";
 import RightGradient from "../../public/svgs/right.svg";
 import { Toaster } from "react-hot-toast";
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -24,24 +24,37 @@ const ContactUs = () => {
   const handleContact = (e) => {
     e.preventDefault();
 
+    setLoading(true); // Set loading to true when starting the request
+
     // Create a request payload with form data
-    const reqPacket = {
-      name: name,
-      email: email,
+    const templateParams = {
+      from_name: name,
+      from_email: email,
       message: message,
     };
 
-    setLoading(true); // Set loading to true when starting the request
-
-    // Log form data to the console instead of sending an API request
-    console.log("Form submitted:", reqPacket);
-    toast.success("Form data logged to the console!");
-
-    // Clear form inputs after submission
-    setName("");
-    setEmail("");
-    setMessage("");
-    setLoading(false);
+    emailjs
+      .send(
+        "service_rxad6bo",
+        "template_7k05gwl",
+        templateParams,
+        "oeHGqrk9dD181rbnU"
+      )
+      .then((response) => {
+        console.log("Success:", response);
+        toast.success("Message sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        toast.error("Failed to send message.");
+      })
+      .finally(() => {
+        // Clear form inputs after submission
+        setName("");
+        setEmail("");
+        setMessage("");
+        setLoading(false);
+      });
   };
 
   return (

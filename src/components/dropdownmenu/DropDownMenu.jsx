@@ -38,7 +38,7 @@ function DropDownMenu({ closeDropdown }) {
     <div className="relative" onClick={handleMenuToggle} ref={ref}>
       {more && (
         <div
-          className="bg-white backdrop-blur-lg lg:w-[160px] xl:w-[180px] z-10 font-monosans group-hover:text-gray-300 transition-colors duration-300 lg:space-y-3 xl:space-y-3 flex flex-col p-5 border rounded-lg absolute top-10 left-0"
+          className="bg-black backdrop-blur-lg lg:w-[160px] xl:w-[180px] z-10 font-monosans group-hover:text-gray-300 transition-colors duration-300 lg:space-y-3 xl:space-y-3 flex flex-col p-5 border rounded-lg absolute top-10 left-0"
           style={{
             background: "linear-gradient(to bottom, white, gray)",
             WebkitBackgroundClip: "text",
@@ -53,9 +53,7 @@ function DropDownMenu({ closeDropdown }) {
               onClick={closeDropdown}
             >
               <div className="group text-white">
-                <p
-                  className="font-monosans group-hover:text-gray-300 transition-colors duration-300 pb-1 font-medium"
-                >
+                <p className="font-monosans group-hover:text-gray-300 transition-colors duration-300 pb-1 font-medium">
                   {value.name}
                 </p>
                 <div

@@ -247,7 +247,7 @@ const Contact = () => {
               <button
                 data-aos="fade-up"
                 onClick={handleSubmit}
-                className="text-white text-lg font-medium font-monosans capitalize px-6 py-3 bg-sky-500 rounded-[90px] inline-flex cursor-pointer"
+                className="text-white text-lg font-medium font-monosans capitalize px-6 py-3 bg-sky-500 rounded-[90px] flex justify-center cursor-pointer"
               >
                 Submit Message
               </button>

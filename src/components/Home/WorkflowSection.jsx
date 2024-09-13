@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
-
 const WorkflowSection = () => {
-  const [counterOn, setCounterOn] = useState(false);
-
   useEffect(() => {
     Aos.init();
   }, []);
@@ -172,131 +167,6 @@ const WorkflowSection = () => {
               data-aos="fade-up"
             />
           </div>
-        </div>
-
-        <div className="relative h-full flex flex-col justify-between items-center">
-          <div>
-            <img
-              src="/svgs/Center1.svg"
-              alt="center gradient"
-              className="absolute right-0 top-[100rem] w-[50rem] animate-bounce"
-            />
-          </div>
-
-          {/* Achievements */}
-          <h1
-            data-aos="fade-up"
-            className="font-varino text-[26px] sm:text-[35px] xl:text-[66px] text-center mb-16"
-            style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            Our Achievements
-          </h1>
-
-          <ScrollTrigger
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            <div className="relative">
-              <img
-                alt="alrigt_tech_achivements"
-                src="/images/workflowImages/AchivementsLine.png"
-                className="h-[420px] sm:h-[500px]"
-                data-aos="fade-up"
-              />
-
-              {/* Revenue */}
-              <div
-                className="absolute -top-6 sm:-top-10 -left-[90px] xl:-top-9 xl:-left-[220px] lg:-top-9 lg:-left-[220px] flex-col items-center justify-center text-center"
-                style={{
-                  background: "linear-gradient(to bottom, white, gray)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
-                data-aos="fade-up"
-              >
-                <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
-                  {counterOn && (
-                    <CountUp start={0} end={4} duration={2} delay={0} />
-                  )}
-                  .
-                  {counterOn && (
-                    <CountUp start={0} end={8} duration={2} delay={0} />
-                  )}
-                  B+
-                </p>
-                <p className="xl:text-[20px] lg:text-[18px] sm:text-[14px] text-[12px] text-center">
-                  REVENUE GENERATED
-                </p>
-              </div>
-
-              {/* Projects Completed */}
-              <div
-                className="absolute top-[118px] sm:top-32 left-[130px] sm:left-[160px] xl:top-32 xl:left-[90px] lg:top-30 lg:left-[90px] flex-col items-center justify-center text-center"
-                style={{
-                  background: "linear-gradient(to bottom, white, gray)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
-                data-aos="fade-up"
-              >
-                <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
-                  {counterOn && (
-                    <CountUp start={0} end={10} duration={2} delay={0} />
-                  )}
-                  +
-                </p>
-                <p className="xl:text-[20px] lg:text-[18px] sm:text-[14px] text-[12px] text-center">
-                  PROJECTS COMPLETED
-                </p>
-              </div>
-
-              {/* Satisfied Clients */}
-              <div
-                className="absolute top-[180px] sm:top-[280px] left-[260px] sm:left-[360px] xl:top-[300px] xl:left-[450px] lg:top-[290px] lg:left-[300px] flex-col items-center justify-center text-center"
-                style={{
-                  background: "linear-gradient(to bottom, white, gray)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
-                data-aos="fade-up"
-              >
-                <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
-                  {counterOn && (
-                    <CountUp start={0} end={100} duration={2} delay={0} />
-                  )}
-                  +
-                </p>
-                <p className="xl:text-[20px] lg:text-[18px] sm:text-[14px] text-[12px] text-center">
-                  SATISFIED CLIENTS
-                </p>
-              </div>
-
-              {/* Brands */}
-              <div
-                className="absolute top-[300px] sm:top-[360px] left-[140px] sm:left-[180px] xl:top-[300px] xl:left-[300px] lg:top-[350px] lg:left-[100px] flex-col items-center justify-center text-center"
-                style={{
-                  background: "linear-gradient(to bottom, white, gray)",
-                  WebkitBackgroundClip: "text",
-                  color: "transparent",
-                }}
-                data-aos="fade-up"
-              >
-                <p className="text-[18px] sm:text-[30px] xl:text-[42px] lg:text-[32px] font-monosans font-bold">
-                  {counterOn && (
-                    <CountUp start={0} end={50} duration={2} delay={0} />
-                  )}
-                  +
-                </p>
-                <p className="xl:text-[20px] lg:text-[18px] sm:text-[14px] text-[12px] text-center">
-                  BRANDS WORKED WITH
-                </p>
-              </div>
-            </div>
-          </ScrollTrigger>
         </div>
       </section>
     </div>

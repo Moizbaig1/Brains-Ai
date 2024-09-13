@@ -57,17 +57,17 @@ const services = [
     subservice: ["UI Design", "UX Research"],
     link: "/uiuxdesign",
   },
-  {
-    id: 7,
-    name: "CMS DEVELOPMENT",
-    subservice: [
-      "Wordpress Development",
-      "Shopify Development",
-      "Ecommerce Web Development",
-      "QA/Testing Services",
-    ],
-    link: "/cmsdevelopment",
-  },
+  // {
+  //   id: 7,
+  //   name: "CMS DEVELOPMENT",
+  //   subservice: [
+  //     "Wordpress Development",
+  //     "Shopify Development",
+  //     "Ecommerce Web Development",
+  //     "QA/Testing Services",
+  //   ],
+  //   link: "/cmsdevelopment",
+  // },
   {
     id: 8,
     name: "DIGITAL MARKETING",
@@ -155,7 +155,7 @@ const Navbar = () => {
 
       {more && (
         <div className="w-full flex justify-center">
-          <div className="bg-white backdrop-blur-lg md:w-3/4 w-11/12 mx-auto z-10 font-monosans flex flex-col border rounded-lg absolute top-24">
+          <div className="bg-transparent backdrop-blur-lg md:w-3/4 w-11/12 mx-auto z-10 font-monosans flex flex-col border rounded-lg absolute top-24">
             <div className="text-white flex flex-col items-center py-8">
               <div className="container mx-auto p-4 flex flex-col md:flex-row">
                 {/* Left Section */}

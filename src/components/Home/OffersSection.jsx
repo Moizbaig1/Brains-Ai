@@ -42,7 +42,7 @@ const OffersSection = () => {
       description:
         "Social Media, Planet-Scale Web 3.0 DApps, DEFI, DEX—Unleashing Decentralized Innovation For Tomorrow's Marketplaces.",
       image: Blockchain,
-      click: "/blockchain",
+      click: "/digitaldevelopment",
     },
     {
       id: 4,

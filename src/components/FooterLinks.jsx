@@ -18,18 +18,18 @@ const FooterLinks = () => {
       name: "Services",
       path: "/services",
     },
-    {
-      name: "Portfolio",
-      path: "/portfolio",
-    },
+    // {
+    //   name: "Portfolio",
+    //   path: "/portfolio",
+    // },
     // {
     //   name: "Our Product",
     //   path: "/ourproducts",
     // },
-    {
-      name: "Blogs",
-      path: "/blogs",
-    },
+    // {
+    //   name: "Blogs",
+    //   path: "/blogs",
+    // },
     {
       name: "Contact",
       path: "/contact",
@@ -45,7 +45,7 @@ const FooterLinks = () => {
               {name}
             </p>
             <div
-              className={`absolute -bottom-1 transition-opacity duration-300 ${
+              className={`absolute -bottom-3 transition-opacity duration-300 ${
                 pathname !== path ? "opacity-0 group-hover:opacity-100" : ""
               }`}
             >

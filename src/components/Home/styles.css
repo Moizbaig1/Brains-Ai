@@ -1,0 +1,18 @@
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-containers {
+  animation: slideInfinite 10s linear infinite;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-containers::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

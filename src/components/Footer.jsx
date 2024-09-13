@@ -2,13 +2,10 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { useNavigate, Link } from "react-router-dom"; // Updated import
-import FooterLinks from "./FooterLinks"; // Adjust path as needed
+import { useNavigate, Link } from "react-router-dom";
+import FooterLinks from "./FooterLinks";
 
 import Pointingup from "../../public/images/pointingup.png";
-import phone from "../../public/svgs/phone.svg";
-import clock from "../../public/svgs/clock.svg";
-import email from "../../public/svgs/email.svg";
 import Logo from "../../public/images/deep-ai.png";
 import linkedIn from "../../public/svgs/linkedin.svg";
 import facebook from "../../public/svgs/facebook.svg";
@@ -75,7 +72,7 @@ const Footer = () => {
                 alt="Pointingup icon"
                 className="h-auto w-12"
               />
-              <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-[300] capitalize text-white font-monosans">
+              <p className="text-[14px] sm:text-[16px] lg:text-[18px] font-[300] capitalize text-white font-mono">
                 Contact us today!
               </p>
             </div>
@@ -91,7 +88,7 @@ const Footer = () => {
             </h1>
             <button
               onClick={handleContact}
-              className="text-center text-white text-[16px] lg:text-lg font-medium cursor-pointer font-monosans capitalize w-full sm:w-[250px] h-[62px] px-6 py-4 bg-sky-500 rounded-[90px] inline-flex items-center gap-2.5 z-10"
+              className="text-center text-white text-[16px] lg:text-lg font-medium cursor-pointer font-monosans capitalize w-full sm:w-[250px] px-6 py-3 bg-sky-500 rounded-[90px] flex justify-center"
             >
               Contact Us Today
             </button>
