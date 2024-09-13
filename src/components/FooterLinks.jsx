@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-// import { SelectedIcon } from "@/icons";
+import { SelectedIcon } from "../icons";
 
 const FooterLinks = () => {
   const { pathname } = useLocation(); // Use React Router's useLocation hook
@@ -49,7 +49,7 @@ const FooterLinks = () => {
                 pathname !== path ? "opacity-0 group-hover:opacity-100" : ""
               }`}
             >
-              {/* <SelectedIcon /> */}
+              <SelectedIcon />
             </div>
           </div>
         </Link>
