@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -24,3 +25,14 @@ const App = () => {
 };
 
 export default App;
+=======
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
+>>>>>>> c7b584b1ed8469ecc69e29594518b13a5cb36eae
