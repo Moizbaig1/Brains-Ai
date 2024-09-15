@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -15,8 +16,6 @@ import WordpressImage from "../../../public/images/Wordpress.png";
 import purpleGradient from "../../../public/svgs/purpleGradient.svg";
 import Gradient1 from "../../../public/svgs/gradient1.svg";
 import Gradient2 from "../../../public/svgs/RightCornerGradient.svg";
-
-// import HeadingMenu from "@/components/MenuComponents/headingMenu/HeadingMenu"; // Adjust the import path as needed
 
 const OffersSection = () => {
   const Data = [
@@ -78,7 +77,7 @@ const OffersSection = () => {
     },
     {
       id: 8,
-      title: "WORDPRES PLUGIN DEVELOPMENT",
+      title: "WORDPRESS PLUGIN DEVELOPMENT",
       description:
         "Upgrade E-Commerce Websites For Smooth Operation And Expansion. Boost Business Online With Personalized WordPress Plugins.",
       image: WordpressImage,
@@ -131,7 +130,7 @@ const OffersSection = () => {
                 index % 2 === 1 ? "lg:mt-[3rem]" : ""
               } `}
             >
-              <a href={`${offer.click}`}>
+              <Link to={offer.click}>
                 <div className="flex flex-col justify-center items-center bg-[#111424] h-full w-full rounded-[36px]">
                   <div className="relative flex flex-col items-center justify-center py-[16px] space-y-3 z-20">
                     <img src={offer.image} alt={offer.title} />
@@ -149,7 +148,7 @@ const OffersSection = () => {
                     />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

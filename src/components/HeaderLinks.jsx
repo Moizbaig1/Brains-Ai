@@ -2,7 +2,7 @@ import React from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DropDownMenu from "./dropdownmenu/DropDownMenu";
 import { SelectedIcon } from "../icons";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Links = ({ SettingMenu, more, closeDropdown }) => {
   const location = useLocation();
@@ -25,9 +25,7 @@ const Links = ({ SettingMenu, more, closeDropdown }) => {
             key={name}
           >
             <div className="cursor-pointer">
-              <h1
-                className="text-white font-monosans group-hover:text-gray-300 transition-colors duration-300 flex items-center gap-1"
-              >
+              <h1 className="text-white font-monosans group-hover:text-gray-300 transition-colors duration-300 flex items-center gap-1">
                 <span>{name}</span>
                 {more ? (
                   <FaChevronUp className="text-sm" />
@@ -38,7 +36,7 @@ const Links = ({ SettingMenu, more, closeDropdown }) => {
             </div>
           </div>
         ) : (
-          <a className="relative" key={name} href={path}>
+          <Link className="relative" key={name} to={path}>
             <div className="group">
               <p className="text-white font-monosans group-hover:text-gray-300 transition-colors duration-300">
                 {name}
@@ -51,7 +49,7 @@ const Links = ({ SettingMenu, more, closeDropdown }) => {
                 <SelectedIcon />
               </div>
             </div>
-          </a>
+          </Link>
         );
       })}
       <DropDownMenu closeDropdown={closeDropdown} />

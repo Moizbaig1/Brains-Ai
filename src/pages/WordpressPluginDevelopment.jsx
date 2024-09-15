@@ -4,8 +4,8 @@ import Workflow from "../components/Workflow";
 import Testimonials from "../components/Home/Testimonials";
 import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
-import SubService from "../components/GenerativeAI/SubService";
-import Technologies from "../components/GenerativeAI/Technologies";
+import SubService from "../components/UIUXDesign/SubService";
+import Technologies from "../components/UIUXDesign/Technologies";
 
 const WordpressPluginDevelopment = () => {
   return (
