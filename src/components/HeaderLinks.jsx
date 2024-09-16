@@ -1,60 +1,247 @@
-import React from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import DropDownMenu from "./dropdownmenu/DropDownMenu";
-import { SelectedIcon } from "../icons";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import SelectedIcon from "../icons/selected-icon";
 
-const Links = ({ SettingMenu, more, closeDropdown }) => {
-  const location = useLocation();
-  const activePath = location.pathname;
+const HeaderLinks = () => {
+  const [isServicesOpen, setServicesOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
+  const [hoveredService, setHoveredService] = useState(null);
+  const dropdownRef = useRef(null);
+  const location = useLocation(); // Get the current location
 
+  // List of services with subservices
+  const services = [
+    {
+      id: 0,
+      name: "Social Media Marketing",
+      subservice: [],
+      link: "/social-media-services",
+    },
+    {
+      id: 1,
+      name: "GENERATIVE AI",
+      subservice: [
+        "Generative AI Development",
+        "Natural Language Processing (NLP)",
+        "AI Chatbot Development",
+        "Retrieval-Augmented Generation (RAG)",
+      ],
+      link: "/generativeai",
+    },
+    {
+      id: 2,
+      name: "WEB DEVELOPMENT",
+      subservice: [
+        "Front End Development",
+        "Backend Development",
+        "Modern Saas Applications",
+      ],
+      link: "/fullstackdevelopment",
+    },
+    {
+      id: 3,
+      name: "MOBILE APP DEVELOPMENT",
+      subservice: ["Custom App Development", "Flutter App Development"],
+      link: "/mobileappdevelopment",
+    },
+    {
+      id: 5,
+      name: "WEB 3.0 METAVERSE",
+      subservice: [
+        "Generative AI Development",
+        "Natural Language Processing (NLP)",
+        "AI Chatbot Development",
+        "Retrieval-Augmented Generation (RAG)",
+      ],
+      link: "/webandmetaverse",
+    },
+    {
+      id: 6,
+      name: "UI/UX DESIGN",
+      subservice: ["UI Design", "UX Research"],
+      link: "/uiuxdesign",
+    },
+    {
+      id: 8,
+      name: "DIGITAL MARKETING",
+      subservice: ["SEO", "Content Marketing"],
+      link: "/digitaldevelopment",
+    },
+  ];
+
+  // List of header links
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
   ];
 
+  // Toggle the dropdown menu for services
+  const toggleServicesDropdown = () => {
+    setServicesOpen((prev) => !prev);
+  };
+
+  // Handle service link click to show/hide subservices
+  const handleServiceClick = (service) => {
+    if (selectedService?.id === service.id) {
+      setSelectedService(null);
+    } else {
+      setSelectedService(service);
+    }
+    // Close the dropdown when a service is clicked
+    setServicesOpen(false);
+  };
+
+  // Handle mouse enter and leave to show subservices
+  const handleMouseEnter = (service) => {
+    setHoveredService(service);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredService(null);
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setServicesOpen(false);
+        setSelectedService(null);
+        setHoveredService(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <>
-      {links.map(({ name, path }) => {
-        return name.toLowerCase() === "services" ? (
-          <div
-            className="hidden lg:block relative text-center"
-            onClick={SettingMenu}
-            key={name}
+    <div className="flex items-center space-x-8">
+      {/* Header Links */}
+      {links.map((link) => (
+        <div key={link.path} className="relative">
+          <Link
+            to={link.path}
+            className={`text-white font-monosans hover:text-blue-500 ${
+              location.pathname === link.path ? "text-blue-500" : ""
+            }`}
           >
-            <div className="cursor-pointer">
-              <h1 className="text-white font-monosans group-hover:text-gray-300 transition-colors duration-300 flex items-center gap-1">
-                <span>{name}</span>
-                {more ? (
-                  <FaChevronUp className="text-sm" />
-                ) : (
-                  <FaChevronDown className="text-sm" />
-                )}
-              </h1>
-            </div>
-          </div>
-        ) : (
-          <Link className="relative" key={name} to={path}>
-            <div className="group">
-              <p className="text-white font-monosans group-hover:text-gray-300 transition-colors duration-300">
-                {name}
-              </p>
-              <div
-                className={`absolute -bottom-1 transition-opacity duration-300 ${
-                  activePath !== path ? "opacity-0 group-hover:opacity-100" : ""
-                }`}
-              >
-                <SelectedIcon />
+            {link.name}
+          </Link>
+          {location.pathname === link.path && (
+            <SelectedIcon className="absolute -bottom-1 left-0 w-full" />
+          )}
+        </div>
+      ))}
+
+      {/* Services Dropdown Button */}
+      <div className="" ref={dropdownRef}>
+        <button
+          onClick={toggleServicesDropdown}
+          className="cursor-pointer flex items-center gap-1"
+        >
+          <h1 className="text-white font-monosans">Services</h1>
+          {isServicesOpen ? (
+            <FaChevronUp className="text-sm text-white" />
+          ) : (
+            <FaChevronDown className="text-sm text-white" />
+          )}
+        </button>
+
+        {/* Dropdown Menu */}
+        {isServicesOpen && (
+          <div className="bg-[#111424] text-white backdrop-blur-md shadow-lg w-full md:w-3/4 mx-auto z-10 font-monosans flex flex-col border rounded-lg absolute top-24 left-[50%] translate-x-[-50%] mt-2 p-4">
+            <div className="flex flex-col items-center py-8">
+              <div className="container mx-auto p-4 flex flex-col md:flex-row">
+                {/* Left Section */}
+                <div className="md:w-1/3 p-4 mr-6">
+                  <h2 className="text-3xl font-bold mb-8">SERVICES</h2>
+                  <img
+                    className="object-cover border-2 rounded-lg"
+                    src="/images/generativeai/service-image.png"
+                    alt="serviceImage"
+                  />
+                  <p className="text-sm mt-8">
+                    Explore our comprehensive services tailored to your needs.
+                    We excel in providing industry-standard solutions.
+                  </p>
+                </div>
+
+                {/* Right Section */}
+                <div className="md:w-2/3 p-4">
+                  <h2 className="text-3xl font-bold mb-6">SERVICES</h2>
+                  <ul className="flex flex-col sm:flex-row">
+                    <div className="space-y-4">
+                      {services.map((service) => (
+                        <li
+                          key={service.id}
+                          className="flex md:flex-row flex-col justify-between items-start"
+                        >
+                          <div
+                            className="group relative"
+                            onClick={() => handleServiceClick(service)}
+                            onMouseEnter={() => handleMouseEnter(service)}
+                            onMouseLeave={handleMouseLeave}
+                          >
+                            <Link
+                              to={service.link}
+                              className="hover:text-blue-500"
+                            >
+                              <span className="font-varino text-sm">
+                                {service.name}
+                              </span>
+                            </Link>
+                            {selectedService?.id === service.id && (
+                              <SelectedIcon />
+                            )}
+                          </div>
+                        </li>
+                      ))}
+                    </div>
+
+                    {/* Subservice Display */}
+                    {hoveredService && (
+                      <div className="flex flex-col justify-start items-start mt-5">
+                        {hoveredService.subservice.map((sub, index) => (
+                          <div key={index} className="flex gap-3 items-center">
+                            <IoIosArrowRoundForward className="text-3xl" />
+                            <Link
+                              to={hoveredService.link}
+                              className="font-monosans text-sm hover:text-blue-500"
+                            >
+                              {sub}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </ul>
+                </div>
               </div>
             </div>
-          </Link>
-        );
-      })}
-      <DropDownMenu closeDropdown={closeDropdown} />
-    </>
+          </div>
+        )}
+      </div>
+
+      {/* Contact Link */}
+      <div className="relative">
+        <Link
+          to="/contact"
+          className={`text-white font-monosans hover:text-blue-500 ${
+            location.pathname === "/contact" ? "text-blue-500" : ""
+          }`}
+        >
+          Contact
+        </Link>
+        {location.pathname === "/contact" && (
+          <SelectedIcon className="absolute -bottom-1 left-0 w-full" />
+        )}
+      </div>
+    </div>
   );
 };
 
-export default Links;
+export default HeaderLinks;

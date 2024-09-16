@@ -89,6 +89,11 @@ const OffersSection = () => {
     Aos.init();
   }, []);
 
+  // Function to handle scroll to top on link click
+  const handleLinkClick = (e) => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       {/* Gradient divs */}
@@ -130,7 +135,7 @@ const OffersSection = () => {
                 index % 2 === 1 ? "lg:mt-[3rem]" : ""
               } `}
             >
-              <Link to={offer.click}>
+              <Link to={offer.click} onClick={handleLinkClick}>
                 <div className="flex flex-col justify-center items-center bg-[#111424] h-full w-full rounded-[36px]">
                   <div className="relative flex flex-col items-center justify-center py-[16px] space-y-3 z-20">
                     <img src={offer.image} alt={offer.title} />

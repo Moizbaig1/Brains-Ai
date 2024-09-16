@@ -36,10 +36,20 @@ const FooterLinks = () => {
     },
   ];
 
+  // Function to handle scroll to top on link click
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       {links.map(({ name, path }) => (
-        <Link className="relative hidden lg:block" key={name} to={path}>
+        <Link
+          className="relative hidden lg:block"
+          key={name}
+          to={path}
+          onClick={handleLinkClick} // Add scroll to top functionality
+        >
           <div className="group">
             <p className="text-white lg:text-[14px] xl:text-[16px] font-monosans group-hover:text-gray-300 transition-colors duration-300">
               {name}

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Gradient1 from "../../../public/svgs/gradient1.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -10,11 +11,7 @@ const WorkflowSection = () => {
   return (
     <div className="mt-10 mb-16">
       <div className="absolute left-0">
-        <img
-          className="xl:w-full"
-          alt="gradient1"
-          src="/images/gradients/Gradient1.svg"
-        />
+        <img className="xl:w-full" alt="gradient1" src={Gradient1} />
       </div>
       <section className="relative flex flex-col items-center space-y-3 mt-[30px] lg:mt-[60px] mx-auto mb-6">
         <img

@@ -1,14 +1,13 @@
-// book.jsx
-
 import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { AiOutlineUpload } from "react-icons/ai";
+import { AiOutlineUpload, AiOutlineClose } from "react-icons/ai";
 
 // Import SVGs as static assets
 import Gradient1 from "../../public/svgs/gradient1.svg";
 import Gradient2 from "../../public/svgs/gradient2.svg";
 import rightGradient from "../../public/svgs/right.svg";
+import toast, { Toaster } from "react-hot-toast";
 
 // Functional component for the job application form
 const Book = () => {
@@ -44,7 +43,33 @@ const Book = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+
+    // Prepare form data object
+    const formData = {
+      fullName,
+      email,
+      phoneNumber,
+      country,
+      projectType,
+      technology,
+      cost,
+      projectDescription,
+      selectedFile: selectedFile ? selectedFile.name : null, // Just the file name for now
+    };
+
+    // Log form data to the console
+    console.log("Form Data Submitted:", formData);
+    toast.success("Form Data Submitted");
+    setFullName("");
+    setEmail("");
+    setPhoneNumber("");
+    setCountry("");
+    setProjectType("");
+    setTechnology("");
+    setCost("");
+    setProjectDescription("");
+    setSelectedFile(null);
+    // Handle further form submission logic here (e.g., sending data to an API)
   };
 
   const handleFileSelect = (e) => {
@@ -57,6 +82,7 @@ const Book = () => {
 
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       {/* Background gradients */}
       <div className="absolute right-0 top-0 -z-10">
         <img className="xl:w-full" alt="gradient2" src={Gradient2} />
@@ -120,10 +146,8 @@ const Book = () => {
                 type="text"
                 id="fullName"
                 value={fullName}
-                onChange={(e) => {
-                  setFullName(e.target.value);
-                }}
-                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                onChange={(e) => setFullName(e.target.value)}
+                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                   formErrors.fullName ? "border-red-500" : ""
                 }`}
                 placeholder="Full Name"
@@ -151,10 +175,8 @@ const Book = () => {
                   type="email"
                   id="email"
                   value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setEmail(e.target.value)}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                     formErrors.email ? "border-red-500" : ""
                   }`}
                   placeholder="Email Address"
@@ -179,10 +201,8 @@ const Book = () => {
                   type="phone"
                   id="phoneNumber"
                   value={phoneNumber}
-                  onChange={(e) => {
-                    setPhoneNumber(e.target.value);
-                  }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                     formErrors.phoneNumber ? "border-red-500" : ""
                   }`}
                   placeholder="Phone Number"
@@ -198,7 +218,7 @@ const Book = () => {
               <div className="flex flex-col gap-1 justify-start items-start">
                 <label
                   htmlFor="country"
-                  className="text-center  text-white text-xl ms-4 font-normal font-varino capitalize leading-normal"
+                  className="text-center text-white text-xl ms-4 font-normal font-varino capitalize leading-normal"
                   style={{
                     background: "linear-gradient(to bottom, white, gray)",
                     WebkitBackgroundClip: "text",
@@ -211,10 +231,8 @@ const Book = () => {
                   type="text"
                   id="country"
                   value={country}
-                  onChange={(e) => {
-                    setCountry(e.target.value);
-                  }}
-                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setCountry(e.target.value)}
+                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                     formErrors.country ? "border-red-500" : ""
                   }`}
                   placeholder="Country"
@@ -238,10 +256,8 @@ const Book = () => {
                 <select
                   id="projectType"
                   value={projectType}
-                  onChange={(e) => {
-                    setProjectType(e.target.value);
-                  }}
-                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setProjectType(e.target.value)}
+                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white custom-select ${
                     formErrors.projectType ? "border-red-500" : ""
                   }`}
                 >
@@ -274,10 +290,8 @@ const Book = () => {
                 <select
                   id="technology"
                   value={technology}
-                  onChange={(e) => {
-                    setTechnology(e.target.value);
-                  }}
-                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setTechnology(e.target.value)}
+                  className={`rounded-3xl text-white border border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white custom-select ${
                     formErrors.technology ? "border-red-500" : ""
                   }`}
                 >
@@ -307,10 +321,8 @@ const Book = () => {
                   type="text"
                   id="cost"
                   value={cost}
-                  onChange={(e) => {
-                    setCost(e.target.value);
-                  }}
-                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                  onChange={(e) => setCost(e.target.value)}
+                  className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                     formErrors.cost ? "border-red-500" : ""
                   }`}
                   placeholder="Estimated Cost"
@@ -337,10 +349,8 @@ const Book = () => {
               <textarea
                 id="projectDescription"
                 value={projectDescription}
-                onChange={(e) => {
-                  setProjectDescription(e.target.value);
-                }}
-                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full  bg-transparent focus:outline-white  focus:border-white ${
+                onChange={(e) => setProjectDescription(e.target.value)}
+                className={`rounded-3xl border text-white border-white justify-start items-center p-[.8rem] w-full bg-transparent focus:outline-white focus:border-white ${
                   formErrors.projectDescription ? "border-red-500" : ""
                 }`}
                 placeholder="Describe your project..."
@@ -391,6 +401,17 @@ const Book = () => {
           </form>
         </div>
       </section>
+
+      <style jsx>{`
+        .custom-select {
+          background-color: #111424;
+          color: white;
+        }
+        .custom-select option {
+          background-color: #111424;
+          color: white;
+        }
+      `}</style>
     </>
   );
 };
