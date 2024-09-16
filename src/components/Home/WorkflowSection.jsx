@@ -72,100 +72,210 @@ const WorkflowSection = () => {
               className="w-[80px] sm:w-[120px] sm:h-auto"
               data-aos="fade-up"
             />
-
             <img
               src="/images/awardsImages/image 2.png"
               alt="PSEBImage"
               className="w-[80px] sm:w-[120px] sm:h-auto"
               data-aos="fade-up"
             />
-
-            <img
-              src="/images/awardsImages/image 4.png"
-              alt="FBR"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/awardsImages/NCCS.png"
-              alt="NCCS"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
             <img
               src="/images/awardsImages/Pccc.png"
               alt="PCC"
               className="w-[80px] sm:w-[120px] sm:h-auto"
               data-aos="fade-up"
             />
-
             <img
               src="/images/awardsImages/AirUni.png"
               alt="AirUni"
               className="w-[80px] sm:w-[120px] sm:h-auto"
               data-aos="fade-up"
             />
+          </div>
+        </div>
 
-            <img
-              src="/images/awardsImages/Arid.png"
-              alt="AridUni"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
+        {/* Clients */}
+        <div className="h-full flex flex-col justify-between items-center gap-5 py-10 lg:py-20">
+          <h1
+            data-aos="fade-up"
+            className="font-varino text-[26px] sm:text-[35px] xl:text-[66px] text-center"
+            style={{
+              background: "linear-gradient(to bottom, white, gray)",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            Our Clients
+          </h1>
 
-            <img
-              src="/images/brand1.png"
-              alt="Brand1"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand2.png"
-              alt="Brand2"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand3.png"
-              alt="Brand3"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand4.png"
-              alt="Brand4"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand5.png"
-              alt="Brand5"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand6.png"
-              alt="Brand6"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
-
-            <img
-              src="/images/brand7.png"
-              alt="Brand7"
-              className="w-[80px] sm:w-[120px] sm:h-auto"
-              data-aos="fade-up"
-            />
+          <div className="relative overflow-hidden">
+            <div
+              className="flex items-center gap-x-5 whitespace-nowrap"
+              style={{
+                animation: "scroll 30s linear infinite",
+              }}
+            >
+              {/* Logos */}
+              <img
+                src="/images/brand7.png"
+                alt="Brand7"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand1.png"
+                alt="Brand1"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand6.png"
+                alt="Brand6"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand5.png"
+                alt="Brand5"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand4.png"
+                alt="Brand4"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              {/* Duplicate images for seamless effect */}
+              <img
+                src="/images/brand7.png"
+                alt="Brand7"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand1.png"
+                alt="Brand1"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand6.png"
+                alt="Brand6"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand5.png"
+                alt="Brand5"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand4.png"
+                alt="Brand4"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              {/* Additional items if needed */}
+              <h1 className="font-semibold text-3xl font-MonaSans text-white">
+                TileClub
+              </h1>
+              <img
+                src="/images/brand2.png"
+                alt="Brand2"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/image 4.png"
+                alt="FBR"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/Arid.png"
+                alt="AridUni"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/NCCS.png"
+                alt="NCCS"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              {/* Duplicate images */}
+              <img
+                src="/images/brand7.png"
+                alt="Brand7"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand1.png"
+                alt="Brand1"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand6.png"
+                alt="Brand6"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand5.png"
+                alt="Brand5"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/brand4.png"
+                alt="Brand4"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <h1 className="font-semibold text-3xl font-MonaSans text-white">
+                TileClub
+              </h1>
+              <img
+                src="/images/brand2.png"
+                alt="Brand2"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/image 4.png"
+                alt="FBR"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/Arid.png"
+                alt="AridUni"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+              <img
+                src="/images/awardsImages/NCCS.png"
+                alt="NCCS"
+                className="w-[80px] sm:w-[120px] sm:h-auto"
+                data-aos="fade-up"
+              />
+            </div>
           </div>
         </div>
       </section>
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      `}</style>
     </div>
   );
 };

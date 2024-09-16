@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 body{
     background: #111424;
 }
+
 
 @font-face {
     font-family: 'MonaSans';

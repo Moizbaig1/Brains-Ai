@@ -53,9 +53,9 @@ const OffersSection = () => {
     },
     {
       id: 5,
-      title: "WEB 3.0 AND METAVERSE",
+      title: `EMBEDDED <br> SYSTEMS`,
       description:
-        "Embark On A Limitless Journey With Web 3.0 And Metaverse, Shaping Immersive, Open Virtual, And Augmented Metaverse Experiences.",
+        "Efficient, custom embedded systems for seamless integration and top performance. High-performance embedded solutions tailored for your device's needs.",
       image: Web3,
       click: "/webandmetaverse",
     },
@@ -126,7 +126,7 @@ const OffersSection = () => {
           Digital Marketing Solutions.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center py-5 px-5 lg:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center py-5 px-7 lg:px-0">
           {Data.map((offer, index) => (
             <div
               key={index}
@@ -139,9 +139,10 @@ const OffersSection = () => {
                 <div className="flex flex-col justify-center items-center bg-[#111424] h-full w-full rounded-[36px]">
                   <div className="relative flex flex-col items-center justify-center py-[16px] space-y-3 z-20">
                     <img src={offer.image} alt={offer.title} />
-                    <p className="font-varino text-[18px] text-center text-white">
-                      {offer.title}
-                    </p>
+                    <p
+                      className="font-varino text-[18px] text-center text-white"
+                      dangerouslySetInnerHTML={{ __html: offer.title }}
+                    />
                     <p className="font-monosans text-[12px] text-center text-white px-[15px]">
                       {offer.description}
                     </p>

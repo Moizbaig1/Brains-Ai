@@ -3,7 +3,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import GlobeSvg from "../../../public/svgs/globe.svg";
-// import Heading from "@/components/core/Heading";
 import Gradient1 from "../../../public/svgs/gradient1.svg";
 import Gradient2 from "../../../public/svgs/gradient2.svg";
 
