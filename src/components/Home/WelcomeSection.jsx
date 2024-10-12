@@ -37,7 +37,7 @@ const WelcomeSection = () => {
             color: "transparent",
           }}
         >
-          Deep Ai!
+          Brains Ai!
         </h1>
 
         <p className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[75%] my-2">
