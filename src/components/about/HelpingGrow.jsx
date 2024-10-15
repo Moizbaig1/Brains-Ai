@@ -19,9 +19,9 @@ import { FaPlus, FaTimes } from "react-icons/fa";
 // Data for Accordion
 const data = [
   {
-    heading: "What is Deep Ai?",
+    heading: "What is Brains AI?",
     detail:
-      "Welcome to Deep AI! Headquartered in the USA with dynamic regional offices in Pakistan and the UK, we specialize in cutting-edge frontend and backend development. Our expertise extends to powerful social media marketing strategies, ensuring your digital presence thrives in a competitive landscape. Join us in shaping the future of technology and digital engagement!",
+      "Welcome to Brains AI! Headquartered in the USA with dynamic regional offices in Pakistan and the UK, we specialize in cutting-edge frontend and backend development. Our expertise extends to powerful social media marketing strategies, ensuring your digital presence thrives in a competitive landscape. Join us in shaping the future of technology and digital engagement!",
   },
   {
     heading: "What services do you provide?",
@@ -101,7 +101,7 @@ const HelpingGrow = () => {
                 color: "transparent",
               }}
             >
-              Welcome to Deep Ai
+              Welcome to Brains AI
             </h1>
 
             {/* Accordion Component */}

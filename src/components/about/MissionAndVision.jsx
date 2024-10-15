@@ -50,7 +50,7 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className="font-monosans text-white font-[300]"
               >
-                At Deep AI, we are driven by a passion for technological
+                At Brains AI, we are driven by a passion for technological
                 excellence that transforms businesses and inspires progress. Our
                 mission is to empower our clients with groundbreaking solutions
                 that ignite growth and success. By upholding a commitment to
@@ -70,7 +70,7 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className="font-monosans text-white font-[300]"
               >
-                Deep AI envisions a future where we stand as a global technology
+                Brains AI envisions a future where we stand as a global technology
                 leader, revolutionizing the digital landscape. We aim to
                 cultivate a dynamic environment where businesses can seamlessly
                 evolve and thrive. Through our dedication to cutting-edge

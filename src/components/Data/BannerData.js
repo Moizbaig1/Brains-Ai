@@ -11,7 +11,7 @@ export const GenAi = [
   {
     heading: "Generative AI",
     description:
-      "Experience the future with our pioneering Generative AI technologies, designed to streamline your company operations. Custom artificial intelligence solutions that make use of your one-of-a-kind data to improve productivity and simplify operations are our forte here at Deep Ai. To guarantee increased productivity without the hassle of migration, our team of talented engineers is an expert at smoothly integrating the latest technologies into your company framework. These models include ChatGPT, DALL-E, and MidJourney. Our Generative AI services may change and adapt to meet your changing requirements, whether that's automating complicated processes or improving data-driven initiatives. Take the lead in innovation by empowering your organization with Deep Ai.",
+      "Experience the future with our pioneering Generative AI technologies, designed to streamline your company operations. Custom artificial intelligence solutions that make use of your one-of-a-kind data to improve productivity and simplify operations are our forte here at Brains AI. To guarantee increased productivity without the hassle of migration, our team of talented engineers is an expert at smoothly integrating the latest technologies into your company framework. These models include ChatGPT, DALL-E, and MidJourney. Our Generative AI services may change and adapt to meet your changing requirements, whether that's automating complicated processes or improving data-driven initiatives. Take the lead in innovation by empowering your organization with Brains AI.",
     img: GenAI,
   },
 ];
@@ -20,7 +20,7 @@ export const FullStackDev = [
   {
     heading: "Full stack web development",
     description:
-      "When it comes to software development, Deep Ai is the go-to company for both established businesses and leading-edge startups. To ensure that we not only fulfill but also exceed your project needs, our offers include a wide range of full stack services. Modifying current platforms, creating detailed designs, and carrying out complex technological integrations are our forte.With an emphasis on feature-rich interfaces, tight security measures, ideal scalability, and unparalleled speed, our engineers are experts at building strong online and mobile systems. We are well-positioned to handle all of your full stack development requirements thanks to their consistently successful track record. If you want your next project to stand out in today's competitive market, you can rely on Deep Ai to provide accuracy and perfection.",
+      "When it comes to software development, Brains AI is the go-to company for both established businesses and leading-edge startups. To ensure that we not only fulfill but also exceed your project needs, our offers include a wide range of full stack services. Modifying current platforms, creating detailed designs, and carrying out complex technological integrations are our forte.With an emphasis on feature-rich interfaces, tight security measures, ideal scalability, and unparalleled speed, our engineers are experts at building strong online and mobile systems. We are well-positioned to handle all of your full stack development requirements thanks to their consistently successful track record. If you want your next project to stand out in today's competitive market, you can rely on Brains AI to provide accuracy and perfection.",
     img: FullStack,
   },
 ];
@@ -38,7 +38,7 @@ export const MobileAppDev = [
   {
     heading: "Mobile App development",
     description:
-      "In today's lightning-fast digital world, a powerful mobile app is very essential. Here at Deep Ai, we know how important it is to provide your audience with attractive mobile experiences that drive company growth.No matter what you're looking for—iPhone or Android native apps, cross-platform solutions, or jaw-dropping user experience designs—our team of professionals can make it happen. We make sure your mobile app is beautiful to look at, but also functional, by putting an emphasis on quantifiable metrics and ongoing optimization. This will lead to increased engagement, retention, and revenue for your company.",
+      "In today's lightning-fast digital world, a powerful mobile app is very essential. Here at Brains AI, we know how important it is to provide your audience with attractive mobile experiences that drive company growth.No matter what you're looking for—iPhone or Android native apps, cross-platform solutions, or jaw-dropping user experience designs—our team of professionals can make it happen. We make sure your mobile app is beautiful to look at, but also functional, by putting an emphasis on quantifiable metrics and ongoing optimization. This will lead to increased engagement, retention, and revenue for your company.",
     img: MobileApp,
   },
 ];
@@ -56,7 +56,7 @@ export const UiUx = [
   {
     heading: "UI/UX design",
     description:
-      "Creating THE design that shares, operates, and converts is at the core of any digital product, and we at Deep Ai know this better than anyone. From the smoothness of a website to the tactile quality of an app button, our method guarantees that every piece looks great and works well.At Deep Ai, our design team goes beyond creating interfaces. We masterfully create user experiences that combine practicality with emotional appeal. In order to establish credibility and create an emotional connection between your product and its consumers, we use captivating visual storytelling. With every project, our goal is to convert ordinary interactions into unforgettable experiences that people will enjoy and want to come back for more of. Allow us to enhance your product by creating a design that reflects your company objectives and captivates your target market, making routine interactions into exceptional ones.",
+      "Creating THE design that shares, operates, and converts is at the core of any digital product, and we at Brains AI know this better than anyone. From the smoothness of a website to the tactile quality of an app button, our method guarantees that every piece looks great and works well.At Brains AI, our design team goes beyond creating interfaces. We masterfully create user experiences that combine practicality with emotional appeal. In order to establish credibility and create an emotional connection between your product and its consumers, we use captivating visual storytelling. With every project, our goal is to convert ordinary interactions into unforgettable experiences that people will enjoy and want to come back for more of. Allow us to enhance your product by creating a design that reflects your company objectives and captivates your target market, making routine interactions into exceptional ones.",
     img: UIUX,
   },
 ];
@@ -74,7 +74,7 @@ export const WordpressDev = [
   {
     heading: "UI/UX design",
     description:
-      "Creating THE design that shares, operates, and converts is at the core of any digital product, and we at Deep Ai know this better than anyone. From the smoothness of a website to the tactile quality of an app button, our method guarantees that every piece looks great and works well.At Deep Ai, our design team goes beyond creating interfaces. We masterfully create user experiences that combine practicality with emotional appeal. In order to establish credibility and create an emotional connection between your product and its consumers, we use captivating visual storytelling. With every project, our goal is to convert ordinary interactions into unforgettable experiences that people will enjoy and want to come back for more of. Allow us to enhance your product by creating a design that reflects your company objectives and captivates your target market, making routine interactions into exceptional ones.",
+      "Creating THE design that shares, operates, and converts is at the core of any digital product, and we at Brains AI know this better than anyone. From the smoothness of a website to the tactile quality of an app button, our method guarantees that every piece looks great and works well.At Brains AI, our design team goes beyond creating interfaces. We masterfully create user experiences that combine practicality with emotional appeal. In order to establish credibility and create an emotional connection between your product and its consumers, we use captivating visual storytelling. With every project, our goal is to convert ordinary interactions into unforgettable experiences that people will enjoy and want to come back for more of. Allow us to enhance your product by creating a design that reflects your company objectives and captivates your target market, making routine interactions into exceptional ones.",
     img: Wordpress,
   },
 ];
