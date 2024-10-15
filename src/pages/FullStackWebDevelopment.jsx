@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/FullStackDevelopment/Banner";
 import Workflow from "../components/Workflow";
-import Testimonials from "../components/Home/Testimonials";
+import Reviews from "../components/Home/Reviews";
 import { FAQsData } from "../components/Data/FAQsdata";
 import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
@@ -15,7 +15,7 @@ const FullStackWebDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Testimonials />
+      <Reviews />
       <OurSolution />
       <FAQS />
     </div>

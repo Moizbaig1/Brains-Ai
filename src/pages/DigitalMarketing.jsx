@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/DigitalMarketing/Banner";
 import Workflow from "../components/Workflow";
-import Testimonials from "../components/Home/Testimonials";
+import Reviews from "../components/Home/Reviews";
 import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import SubService from "../components/DigitalMarketing/SubService";
@@ -14,7 +14,7 @@ const DigitalMarketing = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Testimonials />
+      <Reviews />
       <OurSolution />
       <FAQS />
     </div>

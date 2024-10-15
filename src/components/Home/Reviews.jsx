@@ -1,10 +1,11 @@
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles.css"; // Import styles
 
-// Testimonials Data
-const testimonialsData = [
+// Reviews Data
+const ReviewsData = [
   {
     id: 1,
     username: "John Smith",
@@ -39,8 +40,8 @@ const testimonialsData = [
   },
 ];
 
-// Testimonial Card Component
-const TestimonialCard = ({ img, review, username, country }) => {
+// Review Card Component
+const ReviewCard = ({ img, review, username, country }) => {
   return (
     <div className="overflow-hidden scroll-containers flex-none rounded-[40px] bg-gradient-to-b from-white to-gray-600 p-[1.5px] w-[300px] lg:w-[500px] lg:h-[250px] scrollbar-none">
       <div className="h-full flex flex-col justify-around items-center rounded-[38px] p-5 bg-[#111424]">
@@ -85,25 +86,25 @@ const TestimonialCard = ({ img, review, username, country }) => {
   );
 };
 
-// Testimonial Container Component
-const TestimonialContainer = () => {
+// Review Container Component
+const ReviewContainer = () => {
   return (
     <div className="flex items-center justify-start gap-4 overflow-x-auto w-full mx-auto scrollbar-none">
-      {testimonialsData.map((testimonial) => (
-        <TestimonialCard
-          key={testimonial.id}
-          img={testimonial.profilePicture}
-          review={testimonial.review}
-          username={testimonial.username}
-          country={testimonial.country}
+      {ReviewsData.map((review) => (
+        <ReviewCard
+          key={review.id}
+          img={review.profilePicture}
+          review={review.review}
+          username={review.username}
+          country={review.country}
         />
       ))}
     </div>
   );
 };
 
-// Main Testimonials Component
-const Testimonials = () => {
+// Main Reviews Component
+const Reviews = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -131,18 +132,18 @@ const Testimonials = () => {
               color: "transparent",
             }}
           >
-            TESTIMONIALS
+            REVIEWS
           </h1>
           <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-8/12">
             Client Voices: See why we are praised for our innovative,
-            user-focused technology solutions. Verified testimonies highlight
+            user-focused technology solutions. Verified reviews highlight
             our profoundly positive effects.
           </p>
         </div>
-        <TestimonialContainer />
+        <ReviewContainer />
       </section>
     </>
   );
 };
 
-export default Testimonials;
+export default Reviews;

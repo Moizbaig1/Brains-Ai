@@ -2,34 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-body{
-    background: #111424;
+/* Custom styles */
+body {
+  /* background-color: #F5F5DC; */
+  background-color: black;
+   
+}
+.section {
+  background-color: black; /* Cream white for specific sections */
+  color: white; /* Dark text color for readability in these sections */
 }
 
+@font-face {
+  font-family: 'MonaSans';
+  src: url('../public/fonts/MonaSans - Normal.ttf') format('woff2'),
+       url('../public/fonts/MonaSans - Normal.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
 
 @font-face {
-    font-family: 'MonaSans';
-    src: url('../public/fonts/MonaSans\ -\ Normal.ttf') format('woff2'),
-         url('../public/fonts/MonaSans\ -\ Normal.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Varino';
+  src: url('../public/fonts/Varino - Bold.ttf') format('woff2'),
+       url('../public/fonts/Varino - Bold.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'Varino';
-    src: url('../public/fonts/Varino\ -\ Bold.ttf') format('woff2'),
-         url('../public/fonts/Varino\ -\ Bold.ttf') format('woff');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Varino';
-    src: url('../public/fonts/Varino\ -\ Normal.ttf') format('woff2'),
-         url('../public/fonts/Varino\ -\ Normal.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Varino';
+  src: url('../public/fonts/Varino - Normal.ttf') format('woff2'),
+       url('../public/fonts/Varino - Normal.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

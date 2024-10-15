@@ -1,19 +1,21 @@
 import React from "react";
 import ContactUs from "../components/ContactUs";
 import WelcomeSection from "../components/Home/WelcomeSection";
-import OffersSection from "../components/Home/OffersSection";
+// import OffersSection from "../components/Home/OffersSection";
 import WorkflowSection from "../components/Home/WorkflowSection";
-import Testimonials from "../components/Home/Testimonials";
+import Reviews from "../components/Home/Reviews";
+import PreviewSection from "../components/Home/PreviewSection";
 import OurNumbers from "../components/about/OurNumbers";
 
 const Home = () => {
   return (
     <div>
       <WelcomeSection />
-      <OffersSection />
+      {/* <OffersSection /> */}
       <WorkflowSection />
       <OurNumbers />
-      <Testimonials />
+      <Reviews/>
+      <PreviewSection/>
       <ContactUs />
     </div>
   );

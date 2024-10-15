@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import AiSoftwareBrains from './pages/AiSoftwareBrains'
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import GenerativeAI from "./pages/GenerativeAi";
@@ -15,6 +15,8 @@ import WebAndMetawerse from "./pages/WebAndMetawerse";
 import UIUXDesign from "./pages/UIUXDesign";
 import SaasApplication from "./pages/SaasApplication";
 import WordpressPluginDevelopment from "./pages/WordpressPluginDevelopment";
+import AIMarketingLandingPage from "./components/AiSoftwareBrains/AIMarketingLandingPage";
+import AIBrainLandingPage from "./components/AiSoftwareBrains/AIBrainLandingPage";
 
 // import GenerativeAI from "./pages/GenerativeAI";
 // import WebDevelopment from "./pages/WebDevelopment";
@@ -29,8 +31,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/AiSoftwareBrains" element={<AiSoftwareBrains />} />
         <Route path="/getQuotes" element={<Book />} />
         <Route path="/generativeai" element={<GenerativeAI />} />
+        <Route path = "/AiBrainLandingPage" element = {<AIBrainLandingPage/>}/>
+        <Route path='/AiMarketingLandingPage'  element = {<AIMarketingLandingPage/>}/>
         <Route
           path="/fullstackdevelopment"
           element={<FullStackWebDevelopment />}

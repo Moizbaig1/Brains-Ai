@@ -4,7 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { SelectedIcon } from "../icons"; // Adjust the import as needed
-import logo from "../../public/images/deep-ai.png"; // Adjust your image path accordingly
+import logo from "../../public/images/Brains Labs.png"; // Adjust your image path accordingly
 
 const services = [
   {
@@ -66,31 +66,32 @@ const services = [
 ];
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [more, setMore] = useState(false);
+  // const [isDropdownOpen, setDropdownOpen] = useState(false);
+  // const [more, setMore] = useState(false);
+
   const [selectedService, setSelectedService] = useState(null);
   const location = useLocation(); // React Router's hook to get the current path
   const menuRef = useRef(null);
-  const dropdownRef = useRef(null);
+  // const dropdownRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(e.target) &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target)
-      ) {
-        setMore(false);
-        setDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  // useEffect(() => {
+  //   const handleClickOutside = (e) => {
+  //     if (
+  //       menuRef.current &&
+  //       !menuRef.current.contains(e.target) &&
+  //       dropdownRef.current &&
+  //       !dropdownRef.current.contains(e.target)
+  //     ) {
+  //       setMore(false);
+  //       setDropdownOpen(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => document.removeEventListener("mousedown", handleClickOutside);
+  // }, []);
 
-  const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
-  const SettingMenu = () => setMore((prev) => !prev);
+  // const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
+  // const SettingMenu = () => setMore((prev) => !prev);
 
   useEffect(() => {
     setSelectedService(services[0]); // Default selected service
@@ -104,13 +105,13 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-[120px] h-[45px] sm:w-[130px] sm:h-[50px]"
+            className="w-auto h-auto max-w-[120px] sm:max-w-[130px] max-h-[50px]"
           />
         </Link>
 
         {/* Mobile Menu Button */}
         <button
-          onClick={toggleDropdown}
+          // onClick={toggleDropdown}
           className="inline-flex items-center p-2 w-10 h-10 justify-center lg:hidden text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200"
         >
           <Bars3Icon className="h-8 w-8 text-gray-400" />
@@ -118,15 +119,13 @@ const Navbar = () => {
 
         {/* Links Section */}
         <div
-          className={`w-full lg:block lg:w-auto ${
-            isDropdownOpen ? "block" : "hidden"
-          }`}
+          className={`w-full lg:block lg:w-auto `}
+          // isDropdownOpen ? "block" : "hidden"
         >
           <div className="flex flex-col lg:flex-row items-center gap-5">
             {/* Links */}
             <Links
-              more={more}
-              SettingMenu={SettingMenu}
+              // more={more} , //SettingMenu={settingMenu}
               menuRef={menuRef}
               location={location}
             />
@@ -152,15 +151,15 @@ const Navbar = () => {
       </div>
 
       {/* Dropdown for Services */}
-      {more && (
+      {/* {more && (
         <div className="w-full flex justify-center">
           <div
             className="text-white backdrop-blur-lg md:w-3/4 w-11/12 mx-auto z-10 flex flex-col border rounded-lg absolute top-24 p-8"
             ref={dropdownRef}
           >
-            <div className="container mx-auto flex flex-col md:flex-row">
-              {/* Left side */}
-              <div className="md:w-1/3 p-4 mr-6">
+            <div className="container mx-auto flex flex-col md:flex-row"> */}
+      {/* Left side */}
+      {/* <div className="md:w-1/3 p-4 mr-6">
                 <h2 className="text-3xl font-bold mb-8">SERVICES</h2>
                 <div className="w-full h-auto bg-cover bg-center rounded-lg mb-4">
                   <img
@@ -173,10 +172,10 @@ const Navbar = () => {
                   Explore our comprehensive services tailored to your needs. We
                   excel in providing industry-standard solutions.
                 </p>
-              </div>
+              </div> */}
 
-              {/* Right side */}
-              <div className="md:w-4/5 p-4">
+      {/* Right side */}
+      {/* <div className="md:w-4/5 p-4">
                 <h2 className="text-3xl font-bold mb-6">SERVICES</h2>
                 <ul className="flex flex-col sm:flex-row">
                   <div className="space-y-4">
@@ -202,10 +201,10 @@ const Navbar = () => {
                         </div>
                       </li>
                     ))}
-                  </div>
+                  </div> */}
 
-                  {/* Subservices */}
-                  <div className="flex flex-col sm:mt-0 mt-5">
+      {/* Subservices */}
+      {/* <div className="flex flex-col sm:mt-0 mt-5">
                     {selectedService?.subservice?.map((item, index) => (
                       <div key={index} className="flex gap-3 items-center">
                         <IoIosArrowRoundForward className="text-3xl opacity-75" />
@@ -223,22 +222,23 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </nav>
   );
 };
 
-const Links = ({ more, SettingMenu, menuRef, location }) => {
+const Links = ({ menuRef, location }) => {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
+    { name: "AI Software Brains", path: "/AiSoftwareBrains" },
   ];
 
   return (
     <>
-      {links.map(({ name, path }) => (
+      {/* {links.map(({ name, path }) => (
         <div
           key={name}
           className="relative"
@@ -251,16 +251,17 @@ const Links = ({ more, SettingMenu, menuRef, location }) => {
                 {more ? <FaChevronUp /> : <FaChevronDown />}
               </h1>
             </div>
-          ) : (
-            <Link to={path} className="relative">
-              <p className="text-white">{name}</p>
-              {location.pathname === path && (
-                <div className="absolute -bottom-2 w-full">
-                  <SelectedIcon />
-                </div>
-              )}
-            </Link>
-          )}
+          ) :  */}
+      {links.map(({ name, path }) => (
+        <div key={name} className="relative">
+          <Link to={path} className="relative">
+            <p className="text-white">{name}</p>
+            {location.pathname === path && (
+              <div className="absolute -bottom-2 w-full">
+                <SelectedIcon />
+              </div>
+            )}
+          </Link>
         </div>
       ))}
     </>
