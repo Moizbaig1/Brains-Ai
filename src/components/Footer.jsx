@@ -6,7 +6,7 @@ import { useNavigate, Link } from "react-router-dom";
 import FooterLinks from "./FooterLinks";
 
 import Pointingup from "../../public/images/pointingup.png";
-import Logo from "../../public/images/deep-ai.png";
+import Logo from "../../public/images/Brains Labs.png";
 import linkedIn from "../../public/svgs/linkedin.svg";
 import facebook from "../../public/svgs/facebook.svg";
 import whatsapp from "../../public/svgs/whatsapp.svg";
@@ -116,12 +116,13 @@ const Footer = () => {
           {/* Footer div 3 */}
           <div className="flex justify-center items-start mt-12">
             <div className="flex flex-wrap justify-center items-center">
-              <div className="w-[268px] h-auto flex-col lg:items-start items-center gap-[15px] sm:gap-[30px]">
+              <div className="relative overflow-hidden rounded-lg shadow-md">
                 <img
                   src={Logo}
                   alt="logo"
-                  className="w-[130px] h-[50px] xl:w-[161.461px] xl:h-[72.95px] lg:w-[140px] lg:h-[72.95px] md:w-[161.461px] md:h-[72.95px]"
+                  className="w-[100px] h-[40px] xl:w-[130px] xl:h-[60px] lg:w-[110px] lg:h-[55px] md:w-[130px] md:h-[60px] transition-transform duration-200 hover:scale-110 mb-4 rounded-full shadow-md ml-4" // Adjusted sizes
                 />
+
                 <div className="flex flex-col justify-start items-center gap-3">
                   {/* <div className="justify-start items-center gap-5 inline-flex w-full">
                     <img src={phone} alt="phone" className="w-[30px] h-[30px]" />
@@ -138,7 +139,7 @@ const Footer = () => {
                   <div className="justify-start items-center gap-5 inline-flex w-full">
                     <CiLocationOn className="text-[100px] text-white" />
                     <div className="text-white font-medium font-monosans">
-                      Pakistan - 44000 Alright Tech Raja Asad Hameed Shaheed
+                      Pakistan - 44000 Brains AI Raja Asad Hameed Shaheed
                       Road, Shamsabad
                     </div>
                   </div>
@@ -151,7 +152,7 @@ const Footer = () => {
                   <div className="justify-start items-center gap-5 inline-flex w-full">
                     <MdOutlineMarkEmailRead className="text-[35px] text-white font-light" />
                     <div className="text-white text-md font-medium font-monosans ml-[5px]">
-                      info@deep-ai.us
+                      info@Brains-AI.us
                     </div>
                   </div>
                 </div>
@@ -162,9 +163,10 @@ const Footer = () => {
         {/* Footer div */}
         <div className="p-6 my-3">
           <div className="flex flex-col justify-center gap-3 sm:flex-row h-10 sm:justify-between items-center">
-            <div className="text-white text-md font-medium font-monosans lowercase hidden sm:block">
-              info@deep-ai.us
+            <div className="text-white text-md font-medium font-monosans hidden sm:block">
+              info@Brains-AI.us
             </div>
+
             <div className="h-[19px] flex gap-4 sm:gap-6 lg:gap-7 xl:gap-9">
               <FooterLinks />
             </div>

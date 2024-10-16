@@ -34,6 +34,8 @@ const FooterLinks = () => {
       name: "Contact",
       path: "/contact",
     },
+    { name: "AI Software Brains",
+       path: "/AiSoftwareBrains"}
   ];
 
   // Function to handle scroll to top on link click
