@@ -1,16 +1,16 @@
-import React from "react";
-import Banner from "../components/DigitalMarketing/Banner";
+import React from 'react'
+import Banner from "../components/Blockchain/Banner";
 import Workflow from "../components/Workflow";
 import Reviews from "../components/Home/Reviews";
 import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
-import SubService from "../components/DigitalMarketing/SubService";
-import Technologies from "../components/DigitalMarketing/Technologies";
+import SubService from "../components/Blockchain/SubService";
+import Technologies from "../components/Blockchain/Technologies";
 
-const DigitalMarketing = () => {
+const blockchain = () => {
   return (
     <div>
-      <Banner />
+       <Banner />
       <SubService />
       <Workflow />
       <Technologies />
@@ -19,7 +19,7 @@ const DigitalMarketing = () => {
       <FAQS />
       <Reviews />
     </div>
-  );
-};
+  )
+}
 
-export default DigitalMarketing;
+export default blockchain

@@ -1,0 +1,21 @@
+/* styles.css */
+
+.section {
+    margin: 0; /* Reset margins */
+    padding: 20px; /* Consistent padding */
+    background-color: #f9f9f9; /* Default background color */
+    color: #333; /* Default text color */
+  }
+  
+  .welcome-section {
+    background-color: white;
+    color : black;
+
+  }
+  
+  .offers-section {
+    background-color: #ffe0b2; /* Specific color */
+  }
+  
+  /* Add more specific styles as needed */
+  

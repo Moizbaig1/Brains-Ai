@@ -14,9 +14,10 @@ const GenerativeAi = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Reviews />
+      {/* <Reviews /> */}
       <OurSolution />
       <FAQS />
+      <Reviews/>
     </div>
   );
 };

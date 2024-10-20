@@ -26,12 +26,12 @@ const MissionAndVision = () => {
         <div className="snap-center flex flex-col space-y-4 my-5 items-center">
           <h1
             data-aos="fade-up"
-            className="font-varino capitalize text-[30px] xl:text-[50px] text-center md:w-3/4 xl:w-3/4"
-            style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
+            className="font-varino text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center text-white mb-8"
+            // style={{
+            //   background: "linear-gradient(to bottom, white, gray)",
+            //   WebkitBackgroundClip: "text",
+            //   color: "transparent",
+            // }}
           >
             Our mission and vision
           </h1>
@@ -42,7 +42,7 @@ const MissionAndVision = () => {
             <div className="flex flex-col lg:gap-5">
               <h1
                 data-aos="fade-up"
-                className="font-varino text-[1.5rem] lg:text-[2.1rem] text-white font-[400] capitalize"
+                className="font-varino text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center text-white mb-8"
               >
                 Our Mission
               </h1>
@@ -50,7 +50,7 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className="font-monosans text-white font-[300]"
               >
-                At Brains AI, we are driven by a passion for technological
+                At Brains AI Inc, we are driven by a passion for technological
                 excellence that transforms businesses and inspires progress. Our
                 mission is to empower our clients with groundbreaking solutions
                 that ignite growth and success. By upholding a commitment to
@@ -62,7 +62,7 @@ const MissionAndVision = () => {
             <div className="flex flex-col gap-5">
               <h1
                 data-aos="fade-up"
-                className="font-varino text-[1.5rem] lg:text-[2.1rem] text-white font-[400] capitalize"
+                className="font-varino text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center text-white mb-8"
               >
                 Our Vision
               </h1>
@@ -70,7 +70,7 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 className="font-monosans text-white font-[300]"
               >
-                Brains AI envisions a future where we stand as a global technology
+                Brains AI Inc envisions a future where we stand as a global technology
                 leader, revolutionizing the digital landscape. We aim to
                 cultivate a dynamic environment where businesses can seamlessly
                 evolve and thrive. Through our dedication to cutting-edge

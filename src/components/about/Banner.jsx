@@ -30,12 +30,12 @@ const Banner = () => {
         <div className="flex flex-col justify-center items-center">
           <h1
             data-aos="fade-up"
-            className="font-varino text-[35px] xl:text-[66px] text-center"
-            style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
+           className="font-varino text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center text-white mb-8"
+            // style={{
+            //   background: "linear-gradient(to bottom, white, gray)",
+            //   WebkitBackgroundClip: "text",
+            //   color: "transparent",
+            // }}
           >
             ABOUT US
           </h1>

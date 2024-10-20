@@ -52,7 +52,7 @@ export const GenAiSubServices = [
     id: 1,
     title: "Generative AI Development",
     description:
-      "Our blockchain subservices offer secure, transparent transactions with cutting-edge solutions, enhancing trust and efficiency in your operations.",
+      "Crafting AI System That Can Generate Original Content , Such As Text,Images ,And Audio , Using Deep Learning Models  .",
     image: genAISubService,
     click: "/generativeai",
   },
@@ -60,7 +60,7 @@ export const GenAiSubServices = [
     id: 2,
     title: "Natural language processing (NLP)",
     description:
-      "Our NLP subservices enhance text analysis and understanding, providing advanced solutions for efficient language processing and communication.",
+      "Implementing AI That Understands And Process Human Language , Enabling Tasks Like Language Translation , Sentiment Analysis , And Automated Text Generation.",
     image: NLP,
     click: "/fullstackdevelopment",
   },
@@ -68,7 +68,7 @@ export const GenAiSubServices = [
     id: 3,
     title: "AI chatbot Development",
     description:
-      "Our AI chatbot development services create intelligent, responsive chatbots, enhancing customer engagement and streamlining interactions.",
+      "Creating intelligent chatbots that interact with users in natural language, providing real-time assistance, customer support, and personalized user experiences.",
     image: Chatbot,
     click: "/blockchain",
   },
@@ -76,7 +76,7 @@ export const GenAiSubServices = [
     id: 4,
     title: "Retrieval-Augmented Generation (RAG)",
     description:
-      "Our RAG subservices combine retrieval and generation, delivering precise, context-aware responses for enhanced information processing.",
+      "Enhancing Al Content Generation By Combining Data Retrieval Techniques With Generative Models, Delivering More Accurate And Context-Aware Outputs.",
     image: RAG,
     click: "/mobileappdevelopment",
   },
@@ -87,5 +87,5 @@ export const TechDescription = [
 ];
 
 export const ServiceDescription = [
-  "Our generative AI services create innovative content across various industries. Harnessing advanced algorithms, we deliver unique solutions for creative challenges and data-driven insights, driving efficiency and innovation.",
+  "We specialize in cutting-edge Al technologies and development processes, including These skills menable us to cold inteligent user-focused solutions in finiths kecco support, content genevation and dara-driven insights.",
 ];

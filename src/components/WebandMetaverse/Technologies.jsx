@@ -6,7 +6,7 @@ import { WebMetaverseServices, TechDescription } from "../Data/WebandMetaverse";
 const Technologies = () => {
   return (
     <>
-      <section className="relative flex flex-col space-y-4 items-center mt-10 sm:mt-20 xl:px-32">
+      <section className="relative flex flex-col space-y-4 items-center mt-10 sm:mt-20 xl:px-32 bg-white">
         <div>
           <img
             src={centerGradient}
@@ -17,20 +17,16 @@ const Technologies = () => {
 
         <div className="flex flex-col justify-center items-center">
           <h1
-            // data-aos="fade-up"
-            className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px]  xl:leading-[60px]"
+            className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black"
             style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
+              color: "black", // Set text color to black
             }}
           >
             TECHNOLOGIES
             <br /> WE WORK WITH
           </h1>
           <p
-            // data-aos="fade-up"
-            className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-8/12 my-3 sm:my-4 lg:my-5 xl:my-6"
+            className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-black font-extralight w-10/12 md:w-8/12 xl:w-8/12 my-3 sm:my-4 lg:my-5 xl:my-6"
           >
             {TechDescription}
           </p>
@@ -42,7 +38,7 @@ const Technologies = () => {
             <div
               data-aos="fade-up"
               key={index}
-              className="flex gap-3 justify-center items-center text-white px-4 py-2 rounded-full border-2 border-silver bg-gradient-to-r from-[#111424] via-[#111424] to-transparent"
+              className="flex gap-3 justify-center items-center text-black px-4 py-2 rounded-full border-2 border-gray-300 bg-gradient-to-r from-white via-white to-transparent"
             >
               <img
                 src={menu.icon}
@@ -50,7 +46,7 @@ const Technologies = () => {
                 className="w-[1.5rem] h-auto"
                 data-aos="fade-up"
               />
-              <button>{menu?.title}</button>
+              <button className="text-black">{menu?.title}</button>
             </div>
           ))}
         </div>

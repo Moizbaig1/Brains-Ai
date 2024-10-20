@@ -15,9 +15,10 @@ const FullStackWebDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Reviews />
+      
       <OurSolution />
       <FAQS />
+      <Reviews />
     </div>
   );
 };

@@ -3,13 +3,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import toast from "react-hot-toast";
 import emailjs from "emailjs-com";
-import gradient1 from "../../public/svgs/gradient1.svg";
-import topRight from "../../public/svgs/topRight.svg";
-import map from "../../public/images/map.png";
-import purpleGradient from "../../public/svgs/purpleGradient.svg";
 import globe from "../../public/images/globe.png";
-import RightGradient from "../../public/svgs/right.svg";
+import Map from "../../public/images/map.png";
 import { Toaster } from "react-hot-toast";
+import linkedIn from "../../public/svgs/linkedin.svg";
+import facebook from "../../public/svgs/facebook.svg";
+import whatsapp from "../../public/svgs/whatsapp.svg";
+import instagram from "../../public/svgs/insta.svg";
 
 const Contact = () => {
   useEffect(() => {
@@ -38,18 +38,16 @@ const Contact = () => {
         templateParams,
         "oeHGqrk9dD181rbnU"
       )
-      .then((response) => {
-        console.log("Success:", response);
+      .then(() => {
         toast.success("Message sent successfully!");
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        toast.error("Failed to send message.");
-      })
-      .finally(() => {
         setName("");
         setEmail("");
         setMessage("");
+      })
+      .catch(() => {
+        toast.error("Failed to send message.");
+      })
+      .finally(() => {
         setLoading(false);
       });
   };
@@ -58,184 +56,160 @@ const Contact = () => {
     <>
       <Toaster position="top-center" reverseOrder={false} />
 
-      {/* Gradient */}
-      <div className="absolute" style={{ maxWidth: "100%", height: "auto" }}>
-        <img className="xl:w-full -z-20" alt="gradient1" src={gradient1} />
-      </div>
-      <div>
-        <img
-          src={topRight}
-          alt="top-right gradient"
-          className="absolute right-0 top-0 -z-10 animate-pulse"
-        />
-      </div>
+      <h1
+        className="font-varino mt-10 mb-5 text-[22px] sm:text-[28px] lg:text-[50px] xl:text-[55px] text-center text-white leading-tight"
+        data-aos="fade-up"
+      >
+        CONTACT US
+      </h1>
 
-      {/* Contact Us Section */}
-      <section className="relative snap-center flex flex-col space-y-4 items-center mt-16 sm:mt-20 lg:mt-24">
-        <div className="absolute right-0 bottom-0">
-          <img
-            className="xl:w-full -z-20"
-            alt="right gradient"
-            src={RightGradient}
-          />
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <h1
-            data-aos="fade-up"
-            className="font-varino text-[24px] sm:text-[30px] xl:text-[55px] text-center capitalize"
-            style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            CONTACT US
-          </h1>
-          <p
-            data-aos="fade-up"
-            className="mt-1 sm:mt-2 text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-[60%] xl:w-[65%]"
-          >
-            Connect with us for personalized solutions. Your gateway to
-            innovation inquiries, collaborations, and support. Let's create
-            together. Reach out and succeed.
-          </p>
+      <section className="relative flex flex-col lg:flex-row items-start pt-16 pb-20 bg-gray-50 text-black w-full">
+        {/* Left Section: Email, Phone, and Globe */}
+        <div className="flex flex-col items-center lg:items-start lg:w-1/3 px-5 space-y-6 text-center lg:text-left">
+          <div className="mt-5">
+            <p className="mt-10 ms-8">
+              <strong>Contact With Email</strong>
+              <br />
+              brain.ai@gmail.com
+            </p>
+            <p className="mt-4 ms-5">
+              <strong>Contact On Phone/Whatsapp</strong>
+              <br />
+              +92 346 3164772
+            </p>
+          </div>
+          <div className="mt-8">
+            <img
+              src={globe}
+              alt="Globe"
+              className="w-64 h-64 opacity-70 mt-10"
+              style={{
+                marginTop: "230px",
+                marginLeft: "50px",
+              }}
+              data-aos="fade-left"
+            />
+          </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 lg:py-10 px-5 gap-8 sm:gap-20 lg:gap-28 xl:gap-40">
-          {/* Image Section */}
-          <div
-            className="flex justify-start items-center px-12 mt-6 sm:mt-10 lg:mt-0"
-            data-aos="fade-up"
-          >
-            <img className="w-[27.5rem]" src={globe} alt="globe" />
+        {/* Right Section: Map, Social Media, and Form */}
+        <div className="flex flex-col items-center lg:w-2/3 px-5 space-y-10 lg:space-y-0 lg:pl-10">
+          {/* Map and Address */}
+          <div className="flex flex-col items-center lg:items-start space-y-4 text-center lg:text-left">
+            <img
+              src={Map}
+              alt="Map"
+              className="w-32 h-32 mb-4"
+              style={{ marginLeft: "130px" }}
+              data-aos="fade-left"
+            />
+            <p className="mb-4">
+              1st Floor, Brain AI Private Limited, Sarfraz Business & Technology
+              <br />
+              Park, near Arid University & Shamsabad Metro Station, Shamsabad,
+              <br />
+              Rawalpindi
+            </p>
+            <div className="flex items-center space-x-6 mt-10 mb-10 ms-5"
+            data-aos="fade-left">
+              {/* Social Media Icons */}
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  src={linkedIn}
+                  alt="LinkedIn"
+                  className="w-10 h-10 ms-10"
+                  style={{ filter: "grayscale(100%) brightness(50%)" }}
+                />
+              </a>
+              <a href="#" aria-label="Facebook">
+                <img
+                  src={facebook}
+                  alt="Facebook"
+                  className="w-10 h-10"
+                  style={{ filter: "grayscale(100%) brightness(50%)" }}
+                />
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                <img
+                  src={whatsapp}
+                  alt="WhatsApp"
+                  className="w-10 h-10"
+                  style={{ filter: "grayscale(100%) brightness(50%)" }}
+                />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src={instagram}
+                  alt="Instagram"
+                  className="w-10 h-10"
+                  style={{ filter: "grayscale(100%) brightness(50%)" }}
+                />
+              </a>
+            </div>
           </div>
 
-          {/* Form Section */}
+          {/* Contact Form */}
           <div
-            className="bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-3xl p-1"
-            data-aos="fade-up"
+            className="bg-white text-black rounded-lg p-8 w-full lg:w-2/3 shadow-md mt-10 border-2 border-black"
+            data-aos="fade-left"
+            style={{
+              marginTop: "40px",
+            }}
           >
-            <div className="relative flex flex-col gap-20 py-10 px-5 rounded-3xl bg-[#111424]">
-              {/* Purple Gradient */}
-              <div className="absolute">
-                <img
-                  className="xl:w-full animate-pulse -z-10"
-                  alt="purple gradient"
-                  src={purpleGradient}
+            <form onSubmit={handleSubmit} className="mt-5">
+              <div className="mb-5 ">
+                <label htmlFor="name" className="block mb-2 font-semibold">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Your Name"
+                  required
                 />
               </div>
-
-              {/* Form */}
-              <form onSubmit={handleSubmit} data-aos="fade-up">
-                <div className="flex flex-col gap-5 z-20">
-                  {/* Name Input */}
-                  <div className="flex flex-col gap-1 justify-start items-start z-20">
-                    <label
-                      htmlFor="name"
-                      className="text-center py-2 text-white text-base sm:text-lg font-normal font-varino capitalize leading-normal"
-                      style={{
-                        background: "linear-gradient(to bottom, white, gray)",
-                        WebkitBackgroundClip: "text",
-                        color: "transparent",
-                      }}
-                    >
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      type="text"
-                      className="rounded-3xl border border-white justify-start items-center px-6 py-3 w-full bg-transparent text-white focus:border-white focus:outline-none font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
-                      placeholder="Your Name"
-                    />
-                  </div>
-
-                  {/* Email Input */}
-                  <div className="flex flex-col gap-1 justify-start items-start z-20">
-                    <label
-                      htmlFor="email"
-                      className="text-center py-2 text-white text-base sm:text-lg font-normal font-varino capitalize leading-normal"
-                      style={{
-                        background: "linear-gradient(to bottom, white, gray)",
-                        WebkitBackgroundClip: "text",
-                        color: "transparent",
-                      }}
-                    >
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      className="rounded-3xl border border-white justify-start items-center px-6 py-3 w-full bg-transparent focus:border-white focus:outline-none text-white font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
-                      placeholder="Email Address"
-                    />
-                  </div>
-
-                  {/* Message Input */}
-                  <div className="flex flex-col gap-1 justify-start items-start z-20">
-                    <label
-                      htmlFor="message"
-                      className="text-center py-2 text-white text-base sm:text-lg font-normal font-varino capitalize leading-normal"
-                      style={{
-                        background: "linear-gradient(to bottom, white, gray)",
-                        WebkitBackgroundClip: "text",
-                        color: "transparent",
-                      }}
-                    >
-                      Type Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      rows={5}
-                      className="rounded-3xl border border-white justify-start items-center px-4 py-3 w-full bg-transparent focus:border-white focus:outline-none text-white font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
-                      placeholder="Message"
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    className={`text-center text-white text-[16px] lg:text-lg font-medium font-monosans capitalize px-6 py-3 rounded-[90px] justify-center items-center gap-2.5 inline-flex cursor-pointer z-20 ${
-                      loading ? "bg-gray-400" : "bg-sky-500"
-                    }`}
-                    disabled={loading}
-                  >
-                    {loading ? (
-                      <svg
-                        className="animate-spin h-5 w-5 mr-3"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          className="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                        />
-                        <path
-                          className="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 1 1 16 0A8 8 0 0 1 4 12z"
-                        />
-                      </svg>
-                    ) : (
-                      "Submit Message"
-                    )}
-                  </button>
-                </div>
-              </form>
-            </div>
+              <div className="mb-5">
+                <label htmlFor="email" className="block mb-2 font-semibold">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div className="mb-5">
+                <label htmlFor="message" className="block mb-2 font-semibold">
+                  Type Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  rows="4"
+                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Message"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className={`w-full p-3 rounded-lg text-white font-semibold ${loading ? "bg-gray-400" : "bg-black"} transition duration-300 ease-in-out hover:bg-blue-600`}
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Submit Message"}
+              </button>
+            </form>
           </div>
         </div>
       </section>

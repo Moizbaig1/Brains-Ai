@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  margin :0px ;
+  padding : 0px;
+}
+
 /* Custom styles */
 body {
   /* background-color: #F5F5DC; */
@@ -12,6 +18,8 @@ body {
   background-color: black; /* Cream white for specific sections */
   color: white; /* Dark text color for readability in these sections */
 }
+
+
 
 @font-face {
   font-family: 'MonaSans';

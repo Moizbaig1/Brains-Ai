@@ -6,6 +6,7 @@ import Meta from "../../../public/images/detailpagesimages/metaverse.png";
 import UIUX from "../../../public/images/detailpagesimages/uiuxdesign.png";
 import Saas from "../../../public/images/detailpagesimages/saasdevelopment.png";
 import Wordpress from "../../../public/images/detailpagesimages/wordpressimage.png";
+import CMS from  "../../../public/images/detailpagesimages/cmsLandingImg.png"
 
 export const GenAi = [
   {
@@ -76,5 +77,23 @@ export const WordpressDev = [
     description:
       "Creating THE design that shares, operates, and converts is at the core of any digital product, and we at Brains AI know this better than anyone. From the smoothness of a website to the tactile quality of an app button, our method guarantees that every piece looks great and works well.At Brains AI, our design team goes beyond creating interfaces. We masterfully create user experiences that combine practicality with emotional appeal. In order to establish credibility and create an emotional connection between your product and its consumers, we use captivating visual storytelling. With every project, our goal is to convert ordinary interactions into unforgettable experiences that people will enjoy and want to come back for more of. Allow us to enhance your product by creating a design that reflects your company objectives and captivates your target market, making routine interactions into exceptional ones.",
     img: Wordpress,
+  },
+];
+
+export const Blockchain = [
+  {
+    heading: "Blockchain Development Services Company",
+    description:
+      "Boost trust, transparency, and unchangeable traceability throughout your business by utilising blockchain's revolutionary potential. Through decentralised, tamper-proof networks, our blockchain development services enable businesses to maximise efficiency, improve security, and open up new avenues for growth. Unchangeability, transparency, and decentralisation are some of the fundamental characteristics of blockchain technology. Blockchain provides immutability—a transaction cannot be changed once it is recorded—and trust by using a distributed ledger to do away with the need for middlemen. Furthermore, traceability—which lets companies monitor and confirm the movement and origin of products or information—is made possible by the transparency of blockchain technology.",
+    img: BlockChain,
+  },
+];
+
+export const CmsDevelopment = [
+  {
+    heading: "CMS Development Services",
+    description:
+      "Raise your online presence with our modified CMS solutions that propel businesses into the digital forefront. Our agency specializes in spearheading comprehensive digital transformations, empowering you to seize new opportunities and unlock unprecedented growth. With a robust online footprint crafted through our expertise, you can captivate audiences, streamline operations, and outmaneuver competitors in the ever-evolving digital landscape. Unlock the full potential of your enterprise by harnessing the power of our custom CMS solutions, meticulously designed to catalyze your digital ascension.",
+    img:CMS ,
   },
 ];

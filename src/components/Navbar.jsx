@@ -3,16 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { SelectedIcon } from "../icons"; 
-import logo from "../../public/images/Brains Labs.png"; 
+import { SelectedIcon } from "../icons";
+import logo from "../../public/images/Brains Labs.png";
 
 const services = [
-  {
-    id: 0,
-    name: "Social Media Marketing",
-    subservice: [],
-    link: "/social-media-services",
-  },
   {
     id: 1,
     name: "GENERATIVE AI",
@@ -41,6 +35,12 @@ const services = [
     link: "/mobileappdevelopment",
   },
   {
+    id: 4,
+    name: "BLOCKCHAIN",
+    subservice: ["BlockChain Development"],
+    link: "/blockchain",
+  },
+  {
     id: 5,
     name: "WEB 3.0 METAVERSE",
     subservice: [
@@ -58,10 +58,43 @@ const services = [
     link: "/uiuxdesign",
   },
   {
+    id: 7,
+    name: "CMS DEVELOPMENT",
+    subservice: [
+      "Wordpress Development",
+      "ecommerce Web Development",
+      "QA/Testing Services",
+    ],
+    link: "/cmsdevelopment",
+  },
+
+  {
     id: 8,
     name: "DIGITAL MARKETING",
     subservice: ["SEO", "Content Marketing"],
     link: "/digitaldevelopment",
+  },
+  {
+    id: 9,
+    name: "CYBER SECURITY",
+    subservice: [
+      "Generative AI Development",
+      "Natural Language Processing (NLP)",
+      "AI Chatbot Development",
+      "Retrieval-Augmented Generation (RAG)",
+    ],
+    link: "/generativeai",
+  },
+  {
+    id: 10,
+    name: "SQA",
+    subservice: [
+      "Generative AI Development",
+      "Natural Language Processing (NLP)",
+      "AI Chatbot Development",
+      "Retrieval-Augmented Generation (RAG)",
+    ],
+    link: "/generativeai",
   },
 ];
 
@@ -103,7 +136,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-auto h-auto max-w-[120px] sm:max-w-[130px] max-h-[50px] rounded-full"
+            className="w-auto h-auto max-w-[120px] sm:max-w-[130px] max-h-[50px] rounded-full ms-5 object-cover"
           />
         </Link>
 
@@ -114,7 +147,11 @@ const Navbar = () => {
           <Bars3Icon className="h-8 w-8 text-gray-400" />
         </button>
 
-        <div className={`w-full lg:block lg:w-auto ${isDropdownOpen ? "block" : "hidden"}`}>
+        <div
+          className={`w-full lg:block lg:w-auto ${
+            isDropdownOpen ? "block" : "hidden"
+          }`}
+        >
           <div className="flex flex-col lg:flex-row items-center gap-5">
             <Links
               more={more}
@@ -126,17 +163,17 @@ const Navbar = () => {
             <div className="block lg:hidden">
               <Link
                 to="/getQuotes"
-                className="bg-[#00A7E1] text-white px-[30px] py-[7px] rounded-3xl"
+                className="bg-[#FFFFFF] text-black px-[30px] py-[7px] rounded-3xl me-3"
               >
-                Book a Free Consultation
+                Get A Quote
               </Link>
             </div>
           </div>
         </div>
 
         <Link to="/getQuotes" className="lg:block hidden">
-          <div className="bg-[#00A7E1] text-white px-[30px] py-[7px] rounded-3xl">
-            Book a Free Consultation
+          <div className="bg-[#FFFFFF] text-black px-[30px] py-[7px] rounded-3xl me-3 ">
+            Get A Quote
           </div>
         </Link>
       </div>
@@ -189,7 +226,7 @@ const Navbar = () => {
                         </div>
                       </li>
                     ))}
-                  </div> 
+                  </div>
 
                   <div className="flex flex-col sm:mt-0 mt-5">
                     {selectedService?.subservice?.map((item, index) => (
@@ -239,12 +276,26 @@ const Links = ({ menuRef, location, more, SettingMenu }) => {
               </h1>
             </div>
           ) : (
+            // <div className="relative">
+            //   <Link to={path} className="relative">
+            //     <p className="text-white">{name}</p>
+            //     {location.pathname === path && (
+            //       <div className="absolute -bottom-1 left-0 w-full ">
+            //        <SelectedIcon className="w-full" /></div>
+
+            //     )}
+            //   </Link>
+            // </div>
             <div className="relative">
-              <Link to={path} className="relative">
+              <Link to={path} className="block w-full text-center">
+                {" "}
+                {/* Change to block for full width */}
                 <p className="text-white">{name}</p>
                 {location.pathname === path && (
-                  <div className="absolute -bottom-2 w-full">
-                    <SelectedIcon />
+                  <div className="absolute -bottom-1 left-0 w-full">
+                    {" "}
+                    {/* Ensure it fills the parent */}
+                    <SelectedIcon className="w-full" />
                   </div>
                 )}
               </Link>
