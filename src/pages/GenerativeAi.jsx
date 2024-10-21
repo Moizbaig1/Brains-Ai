@@ -6,7 +6,7 @@ import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import Technologies from "../components/GenerativeAI/Technologies";
 import SubService from "../components/GenerativeAI/SubService";
-
+import Casestudy  from "../pages/Casestudy";
 const GenerativeAi = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ const GenerativeAi = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      {/* <Reviews /> */}
+      <Casestudy/>
       <OurSolution />
       <FAQS />
       <Reviews/>

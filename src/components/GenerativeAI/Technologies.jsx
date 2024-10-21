@@ -2,7 +2,6 @@ import React from "react";
 import "aos/dist/aos.css";
 import centerGradient from "../../../public/svgs/Center2.svg";
 import { GenAi, TechDescription } from "../Data/GenAi";
-
 const Technologies = () => {
   return (
     <>
