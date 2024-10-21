@@ -10,9 +10,9 @@ const WorkflowSection = () => {
 
   return (
     <div className="bg-white px-5 sm:px-10 lg:px-20 py-16 relative">
-      <div className="absolute left-0 top-0 w-full h-full">
+      {/* <div className="absolute left-0 top-0 w-full h-full">
         <img className="xl:w-full" alt="gradient1" src={Gradient1} />
-      </div>
+      </div> */}
       <section className="relative flex flex-col items-center space-y-10 mx-auto">
         <img
           className="absolute rounded-3xl -z-10 w-full h-full animate-pulse"
@@ -40,7 +40,7 @@ const WorkflowSection = () => {
           data-aos="fade-up"
             className="w-[320px] sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1000px] object-contain select-none"
             alt="Workflow Image"
-            src="/images/workflowImages/WorkflowImage.png"
+            src="/images/workflowImages/workflow.png"
           />
         </div>
       </section>

@@ -19,14 +19,14 @@ const OurNumbers = () => {
   return (
     <div className="bg-white text-black relative py-16">
       {/* Gradient */}
-      <div className="absolute inset-0" style={{ maxWidth: "100%", height: "auto" }}>
+      {/* <div className="absolute inset-0" style={{ maxWidth: "100%", height: "auto" }}>
         <img className="xl:w-full" alt="gradient1" src={Gradient1} />
-      </div>
+      </div> */}
       <section className="relative pt-20">
         {/* Right Gradient */}
-        <div className="absolute right-0 top-80 -z-10" style={{ maxWidth: "100%", height: "auto" }}>
+        {/* <div className="absolute right-0 top-80 -z-10" style={{ maxWidth: "100%", height: "auto" }}>
           <img className="xl:w-full" alt="right-gradient" src={RightGradient} />
-        </div>
+        </div> */}
         <div className="h-full flex flex-col justify-between items-center space-y-12 lg:space-y-24 xl:space-y-24">
           <h1
            data-aos="fade-up"

@@ -61,9 +61,9 @@ const ContactUs = () => {
       <Toaster position="top-center" reverseOrder={false} />
 
       {/* Gradient Background */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <img className="xl:w-full -z-20" alt="gradient1" src={Gradient1} />
-      </div>
+      </div> */}
 
       {/* Contact Us Section */}
       <section className="relative snap-center flex flex-col space-y-4 items-center mt-10 sm:mt-16 lg:mt-20 bg-white text-black">
