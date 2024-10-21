@@ -121,14 +121,14 @@ const OffersSection = () => {
 
   return (
     <>
-      <div className="absolute left-0">
+      {/* <div className="">
         <img className="xl:w-full" alt="gradient1" src={Gradient1} />
-      </div>
+      </div> */}
 
-      <section className="relative flex flex-col space-y-8 items-center xl:px-32 bg-white mb-16 px-5 sm:px-10 lg:px-20">
-        <div className="absolute right-0 bottom-0 -z-10 animate-pulse">
+      <section className="relative  flex flex-col space-y-8 items-center xl:px-32 bg-white mb-16 px-5 sm:px-10 lg:px-20">
+        {/* <div className="absolute right-0 bottom-0 -z-10 animate-pulse">
           <img className="xl:w-full" alt="gradient2" src={Gradient2} />
-        </div>
+        </div> */}
         <h1
          data-aos="fade-up"
           className="font-varino text-[26px] sm:text-[38px] lg:text-[60px] xl:text-[65px] text-center text-black"

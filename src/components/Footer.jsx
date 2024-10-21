@@ -38,13 +38,13 @@ const Footer = () => {
 
   return (
     <div className="mt-12 relative">
-      {/* Gradients */}
+      {/* Gradients
       <div className="absolute w-full h-auto">
         <img className="w-[400px] lg:w-[300px] xl:w-full" alt="gradient1" src={Gradient1} />
       </div>
       <div className="absolute right-0">
         <img className="w-[400px] lg:w-[300px] xl:w-full" alt="gradient1" src={RightGradient} />
-      </div>
+      </div> */}
       {/* Footer container */}
       <footer>
         <div className="grid lg:grid-cols-3 lg:gap-5 justify-between">

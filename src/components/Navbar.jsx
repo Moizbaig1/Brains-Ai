@@ -131,7 +131,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl z-10 flex flex-wrap items-center justify-between mx-auto  p-4">
         <Link to="/">
           <img
             src={logo}
@@ -186,7 +186,7 @@ const Navbar = () => {
           >
             <div className="container mx-auto flex flex-col md:flex-row">
               <div className="md:w-1/3 p-4 mr-6">
-                <h2 className="text-3xl font-bold mb-8">SERVICES</h2>
+                <h2 className="text-3xl font-bold mb-8 ">SERVICES</h2>
                 <div className="w-full h-auto bg-cover bg-center rounded-lg mb-4">
                   <img
                     className="object-cover border-2 rounded-lg"
@@ -214,7 +214,7 @@ const Navbar = () => {
                           onMouseEnter={() => setSelectedService(service)}
                         >
                           <Link to={service.link} onClick={SettingMenu}>
-                            <span className="inline-block relative opacity-85 text-sm">
+                            <span className="inline-block relative opacity-85 text-sm font-varino">
                               {service.name}
                             </span>
                           </Link>
@@ -234,7 +234,7 @@ const Navbar = () => {
                         <IoIosArrowRoundForward className="text-3xl opacity-75" />
                         <Link
                           to={selectedService.link}
-                          className="text-sm opacity-75"
+                          className="text-sm opacity-75 font-mona"
                         >
                           {item}
                         </Link>
@@ -265,7 +265,7 @@ const Links = ({ menuRef, location, more, SettingMenu }) => {
       {links.map(({ name, path }) => (
         <div
           key={name}
-          className="relative"
+          className="relative z-[99999999999999999999999]"
           ref={name === "Services" ? menuRef : null}
         >
           {name === "Services" ? (
