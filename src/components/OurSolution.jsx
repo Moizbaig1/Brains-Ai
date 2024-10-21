@@ -24,7 +24,7 @@ const OurSolution = () => {
 
   return (
     <>
-      <section className="relative flex flex-col space-y-4 items-center mt-10 sm:mt-20 xl:px-32">
+      <section className="relative flex flex-col space-y-4 items-center xl:px-32 bg-black">
         <div>
           <img
             src={centerGradient}
@@ -52,12 +52,12 @@ const OurSolution = () => {
         {/* Menu Buttons */}
         <div className="flex flex-wrap gap-3 p-3">
           {solItems?.map((menu, index) => (
-            <div key={index}>
+            <div key={index} className="m-0">
               <button
-                className={`text-white px-5 py-2 rounded-full border-2 ${
+                className={`px-5 py-2 rounded-full border-2 transition-colors duration-300 m-0 ${
                   selectedMenuItem?.solItemId === menu.id
-                    ? "border-pink-500 bg-gradient-to-r from-[#EC66B7] to-[#2D5887] font-medium"
-                    : "border-silver bg-gradient-to-r from-[#111424] via-[#111424] to-transparent"
+                    ? "border-black bg-white text-black"
+                    : "border-gray-500 bg-transparent text-white"
                 }`}
                 onClick={() => handleButtonClick(menu.id)}
               >

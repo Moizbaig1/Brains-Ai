@@ -14,9 +14,11 @@ const UIUXDesign = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Reviews />
+      
       <OurSolution />
       <FAQS />
+      <Reviews />
+      {/* end  */}
     </div>
   );
 };

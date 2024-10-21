@@ -25,7 +25,7 @@ export const mobileSubServices = [
     id: 1,
     title: "Custom App Development",
     description:
-      "Our custom app development crafts tailored solutions, optimizing functionality and user experience for seamless integration and efficient operations.",
+      "We Design And Build Tailor-Made Mobile And Web Applications That Meet Your Specific Business Needs.Our Custom Solutions Enhance Functionality, User Experience, And Scalability, Ensuring A Perfect Fit For Your Unique Goals..",
     image: customSubService,
     click: "/generativeai",
   },
@@ -33,7 +33,7 @@ export const mobileSubServices = [
     id: 2,
     title: "Flutter App Development",
     description:
-      "Flutter app development offers cross-platform solutions with high performance and native-like user experiences. Reach wider audiences efficiently with Flutter.",
+      "We Create High-Performance, Cross- Platform Mobile Apps Using Flutter, Ensuring A Smooth And Consistent User Experience On Both IOS And Android. Our Flutter Solutions Are Cost- Effective, Fast To Develop, And Highly Scalable..",
     image: flutterSubService,
     click: "/fullstackdevelopment",
   },
@@ -43,5 +43,5 @@ export const TechDescription = [
 ];
 
 export const ServiceDescription = [
-  "OOur mobile app services provide end-to-end development for iOS and Android platforms. We create user-friendly, high-performance apps tailored to meet your business needs and drive customer engagement.",
+  "We specialize in cutting-edge Al technologies and developme Messes, including These skills enable us to build intelligent, user-focused solutions in fields like customer suppo ntent generation, and data-driven insights.",
 ];

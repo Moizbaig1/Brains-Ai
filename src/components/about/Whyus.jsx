@@ -15,7 +15,7 @@ const WhyUsData = [
     icon: <FaBookmark size={60} />,
     heading: "White-labeled solutions",
     detail:
-      "Brains AI provides superior white-labeled solutions with seamless integration and customizable branding for your company.",
+      "Brains AI Inc provides superior white-labeled solutions with seamless integration and customizable branding for your company.",
   },
   {
     icon: <FaComments size={60} />,

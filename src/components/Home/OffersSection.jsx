@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -18,70 +18,93 @@ import Gradient1 from "../../../public/svgs/gradient1.svg";
 import Gradient2 from "../../../public/svgs/RightCornerGradient.svg";
 
 const OffersSection = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const Data = [
     {
       id: 1,
-      title: "GENERATIVE AI",
-      description:
-        "Elevate With Next Gen AI Mastering Machine Learning, Deep Learning, And Fine-Tuning LLMs For Text, Images, Code, And More",
+      name: "GENERATIVE AI",
       image: AIimage,
-      click: "/generativeai",
+      subservice: [
+        "Generative AI Development",
+        "Natural Language Processing (NLP)",
+        "AI Chatbot Development",
+        "Retrieval-Augmented Generation (RAG)",
+      ],
+      link: "/generativeai",
     },
     {
       id: 2,
-      title: "FULL STACK WEB DEVELOPMENT",
-      description:
-        "Building Full-Stack Websites With MEAN, Laravel, And CERN. Improve Your Online Presence With Innovative, Tailored Development.",
-      image: FullStack,
-      click: "/fullstackdevelopment",
+      name: "WEB DEVELOPMENT",
+      image: WordpressImage,
+      subservice: [
+        "Front End Development",
+        "Backend Development",
+        "Modern SaaS Applications",
+      ],
+      link: "/fullstackdevelopment",
     },
     {
       id: 3,
-      title: "Digital Marketing",
-      description:
-        "Social Media, Planet-Scale Web 3.0 DApps, DEFI, DEX—Unleashing Decentralized Innovation For Tomorrow's Marketplaces.",
-      image: Blockchain,
-      click: "/digitaldevelopment",
+      name: "MOBILE APP DEVELOPMENT",
+      image: MobileApp,
+      subservice: ["Custom App Development", "Flutter App Development"],
+      link: "/mobileappdevelopment",
     },
     {
       id: 4,
-      title: "MOBILE APP DEVELOPMENT",
-      description:
-        "Transform Mobility Cross-platform Apps Flutter And React Native For Mac, Windows, Linux, iPad, iPhone, Android, Watch, and TV",
-      image: MobileApp,
-      click: "/mobileappdevelopment",
+      name: "CMS DEVELOPMENT",
+      image: WordpressImage,
+      subservice: [
+        "WordPress Development",
+        "eCommerce Web Development",
+        "QA/Testing Services",
+      ],
+      link: "/cmsdevelopment",
     },
     {
       id: 5,
-      title: `EMBEDDED <br> SYSTEMS`,
-      description:
-        "Efficient, custom embedded systems for seamless integration and top performance. High-performance embedded solutions tailored for your device's needs.",
-      image: Web3,
-      click: "/webandmetaverse",
+      name: "BLOCKCHAIN",
+      image: Blockchain,
+      subservice: ["Blockchain Development"],
+      link: "/blockchain",
     },
     {
       id: 6,
-      title: "UI/UX DESIGN",
-      description:
-        "Researching On User To Craft User Experience Design (UED) & Converting Them Into Visuals",
-      image: UIUX,
-      click: "/uiuxdesign",
+      name: "DIGITAL MARKETING",
+      image: WordpressImage,
+      subservice: ["SEO", "Content Marketing"],
+      link: "/digitaldevelopment",
     },
     {
       id: 7,
-      title: "MODERN SAAS APPLICATIONS",
-      description:
-        "Create Planet-Scale Serverless Cloud Apps And APIs For Modern Web 2.0 SaaS Excellence (Revolutionize With Next.js 13 & CDK).",
-      image: SAAS,
-      click: "/saasapplication",
+      name: "WEB 3.0 METAVERSE",
+      image: Web3,
+      subservice: [
+        "Generative AI Development",
+        "Natural Language Processing (NLP)",
+        "AI Chatbot Development",
+        "Retrieval-Augmented Generation (RAG)",
+      ],
+      link: "/webandmetaverse",
     },
     {
       id: 8,
-      title: "WORDPRESS PLUGIN DEVELOPMENT",
-      description:
-        "Upgrade E-Commerce Websites For Smooth Operation And Expansion. Boost Business Online With Personalized WordPress Plugins.",
-      image: WordpressImage,
-      click: "/wordpressplugindevelopment",
+      name: "UI/UX DESIGN",
+      image: UIUX,
+      subservice: ["UI Design", "UX Research"],
+      link: "/uiuxdesign",
+    },
+    {
+      id: 9,
+      name: "CYBER SECURITY",
+      image: FullStack,
+      subservice: [
+        "Penetration Testing",
+        "Threat Intelligence",
+        "Incident Response",
+      ],
+      link: "/cybersecurity",
     },
   ];
 
@@ -89,36 +112,31 @@ const OffersSection = () => {
     Aos.init();
   }, []);
 
-  // Function to handle scroll to top on link click
-  const handleLinkClick = (e) => {
+  const handleLinkClick = () => {
     window.scrollTo(0, 0);
   };
 
+  // Determine the number of items to show based on the showAll state
+  const visibleData = showAll ? Data : Data.slice(0, 6);
+
   return (
     <>
-      {/* Gradient divs */}
       <div className="absolute left-0">
         <img className="xl:w-full" alt="gradient1" src={Gradient1} />
       </div>
 
-      {/* End Gradient divs */}
-      <section className="relative flex flex-col space-y-3 items-center mt-[30px] lg:mt-[60px] xl:px-32">
+      <section className="relative flex flex-col space-y-8 items-center xl:px-32 bg-white mb-16 px-5 sm:px-10 lg:px-20">
         <div className="absolute right-0 bottom-0 -z-10 animate-pulse">
           <img className="xl:w-full" alt="gradient2" src={Gradient2} />
         </div>
         <h1
-          className="font-varino text-[26px] sm:text-[38px] lg:[60px] xl:text-[65px] text-center"
-          style={{
-            background: "linear-gradient(to bottom, white, gray)",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
-          }}
-          data-aos="fade-up"
+         data-aos="fade-up"
+          className="font-varino text-[26px] sm:text-[38px] lg:text-[60px] xl:text-[65px] text-center text-black"
         >
-          WHAT WE OFFER
+          SERVICES
         </h1>
         <p
-          className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-6/12 xl:w-8/12"
+          className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-gray-700 font-extralight w-10/12 md:w-6/12 xl:w-8/12"
           data-aos="fade-up"
         >
           We Deliver Innovative Gen AI, Web 3.0, Social Media Services,
@@ -126,27 +144,25 @@ const OffersSection = () => {
           Digital Marketing Solutions.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center py-5 px-7 lg:px-0">
-          {Data.map((offer, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8">
+          {visibleData.map((offer) => (
             <div
-              key={index}
+              key={offer.id}
               data-aos="fade-up"
-              className={`rounded-[40px] bg-gradient-to-b from-[#EC66B7] to-[#2D5887] p-1 w-full h-[24rem] ${
-                index % 2 === 1 ? "lg:mt-[3rem]" : ""
-              } `}
+              className="rounded-[40px] bg-gradient-to-b from-gray-800 to-black p-1 w-full h-[24rem] shadow-lg"
             >
-              <Link to={offer.click} onClick={handleLinkClick}>
-                <div className="flex flex-col justify-center items-center bg-[#111424] h-full w-full rounded-[36px]">
-                  <div className="relative flex flex-col items-center justify-center py-[16px] space-y-3 z-20">
-                    <img src={offer.image} alt={offer.title} />
-                    <p
-                      className="font-varino text-[18px] text-center text-white"
-                      dangerouslySetInnerHTML={{ __html: offer.title }}
-                    />
-                    <p className="font-monosans text-[12px] text-center text-white px-[15px]">
-                      {offer.description}
+              <Link to={offer.link} onClick={handleLinkClick}>
+                <div className="flex flex-col justify-center items-center bg-white h-full w-full rounded-[36px]">
+                  <div className="relative flex flex-col items-center justify-center py-8 space-y-4 z-20">
+                    {offer.image && (
+                      <img src={offer.image} alt={offer.name} className="w-3/4" />
+                    )}
+                    <p className="font-varino text-[20px] text-center text-black">
+                      {offer.name}
                     </p>
-
+                    <p className="font-monosans text-[14px] text-center text-gray-600 px-6">
+                      {offer.subservice.join(", ")}
+                    </p>
                     <img
                       className="absolute -top-3 rounded-3xl -z-10 w-full h-full"
                       alt="cardBG"
@@ -157,6 +173,15 @@ const OffersSection = () => {
               </Link>
             </div>
           ))}
+        </div>
+
+        <div className="w-full flex justify-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="mt-8 mb-12 px-8 py-3 bg-black text-white rounded-full transition-transform transform hover:scale-105"
+          >
+            {showAll ? "Show Less" : "Explore More"}
+          </button>
         </div>
       </section>
     </>

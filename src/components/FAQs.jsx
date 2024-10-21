@@ -11,7 +11,7 @@ const FAQS = () => {
 
   return (
     <>
-      <section className="relative flex flex-col space-y-4 items-center mt-10 sm:mt-20 xl:px-32">
+      <section className="relative flex flex-col space-y-4 items-center mt-10 sm:mt-20 xl:px-32 bg-white"> {/* Set background to white */}
         <div>
           <img
             src={centerGradient}
@@ -22,11 +22,9 @@ const FAQS = () => {
 
         <div className="flex flex-col justify-center items-center">
           <h1
-            className="font-varino xl:px-36 lg:px-44 md:px-24 px-10 text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px]"
+            className="font-varino xl:px-36 lg:px-44 md:px-24 px-10 text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black" // Change text color to black
             style={{
-              background: "linear-gradient(to bottom, white, gray)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
+              background: "none", // Set to none to keep it simple
             }}
             data-aos="fade-up"
           >
@@ -34,7 +32,7 @@ const FAQS = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-8/12 my-3 sm:my-4 lg:my-5 xl:my-6"
+            className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-black font-extralight w-10/12 md:w-8/12 xl:w-8/12 my-3 sm:my-4 lg:my-5 xl:my-6" // Change text color to black
           >
             Explore our FAQs for quick answers to common queries about our
             products and services. Need more help? Contact us anytime.
@@ -49,19 +47,19 @@ const FAQS = () => {
                 <div className="py-5" key={index}>
                   <details className="group">
                     <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                      <span className="text-white font-monosans">
+                      <span className="text-black font-monosans"> {/* Change text color to black */}
                         {item?.question}
                       </span>
                       <span className="transition group-open:rotate-180">
                         <svg
                           fill="none"
-                          color="white"
+                          color="black" // Change icon color to black
                           height="24"
-                          shape-rendering="geometricPrecision"
+                          shapeRendering="geometricPrecision"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           viewBox="0 0 24 24"
                           width="24"
                         >
@@ -69,7 +67,7 @@ const FAQS = () => {
                         </svg>
                       </span>
                     </summary>
-                    <p className="group-open:animate-fadeIn mt-3 text-white font-monosans text-xs font-thin">
+                    <p className="group-open:animate-fadeIn mt-3 text-black font-monosans text-xs font-thin"> {/* Change text color to black */}
                       {item?.answer}
                     </p>
                   </details>

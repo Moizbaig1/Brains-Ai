@@ -14,9 +14,10 @@ const MobileAppDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Reviews />
+      
       <OurSolution />
       <FAQS />
+      <Reviews />
     </div>
   );
 };

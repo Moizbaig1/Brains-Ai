@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -6,6 +6,7 @@ const Workflow = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+
   return (
     <div className="flex flex-col items-center space-y-10 mt-10">
       <div className="flex flex-col space-y-3 sm:space-y-4 items-center">
@@ -13,9 +14,7 @@ const Workflow = () => {
           data-aos="fade-up"
           className="px-2 sm:px-0 font-varino text-[26px] sm:text-[35px] xl:text-[66px] text-center capitalize"
           style={{
-            background: "linear-gradient(to bottom, white, gray)",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
+            color: "white", // Set text color to black
           }}
         >
           OUR WORK FLOW

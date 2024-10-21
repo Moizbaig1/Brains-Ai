@@ -4,7 +4,8 @@ import HelpingGrow from "../components/about/HelpingGrow";
 import MissionAndVision from "../components/about/MissionAndVision";
 import OurNumbers from "../components/about/OurNumbers";
 import ContactUs from "../components/ContactUs";
-import Whyus from "../components/about/Whyus";
+// import Whyus from "../components/about/Whyus";
+import Partner from "../components/about/Partner";
 
 const About = () => {
   return (
@@ -12,8 +13,9 @@ const About = () => {
       <Banner />
       <HelpingGrow />
       <MissionAndVision />
-      <OurNumbers />
-      <Whyus />
+      <OurNumbers /><br/><br/>
+      
+      <Partner/>
       <ContactUs />
     </>
   );

@@ -14,9 +14,10 @@ const SaasApplication = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      <Reviews />
+      
       <OurSolution />
       <FAQS />
+      <Reviews />
     </div>
   );
 };
