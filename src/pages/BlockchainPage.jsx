@@ -7,10 +7,10 @@ import OurSolution from "../components/OurSolution";
 import SubService from "../components/Blockchain/SubService";
 import Technologies from "../components/Blockchain/Technologies";
 
-const Blockchain = () => {
+export default function BlockchainPage() {
   return (
     <div>
-       <Banner />
+      <Banner />
       <SubService />
       <Workflow />
       <Technologies />
@@ -22,4 +22,7 @@ const Blockchain = () => {
   )
 }
 
-export default Blockchain
+
+
+
+
