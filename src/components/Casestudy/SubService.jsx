@@ -31,7 +31,8 @@ const SubService = () => {
             className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black"
             data-aos="fade-up"
           >
-            AI Case Study
+            
+           Generative AI Case Studies
           </h1>
         </div>
 
@@ -40,13 +41,13 @@ const SubService = () => {
             <div
               key={index}
               data-aos="fade-up"
-              className="rounded-[40px] border-2 border-black p-1 w-full sm:w-auto md:w-auto lg:w-[calc(25% - 20px)] max-w-[300px] h-auto mx-2"
+              className="rounded-[40px] border-2 border-black p-1 w-full sm:w-auto md:w-auto lg:w-[calc(25% - 20px)] max-w-[300px] h-auto mx-2 mb-5 overflow-hidden"
             >
-              <div className="flex justify-center items-center bg-white h-full w-full rounded-[36px]">
+              <div className="flex justify-center items-center bg-white h-[200px] w-full rounded-[36px] overflow-hidden">
                 <img
                   src={image}
                   alt={`Case Study ${index + 1}`}
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

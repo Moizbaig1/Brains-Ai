@@ -18,7 +18,8 @@ import WordpressPluginDevelopment from "./pages/WordpressPluginDevelopment";
 import AIMarketingLandingPage from "./components/AiSoftwareBrains/AIMarketingLandingPage";
 import AIBrainLandingPage from "./components/AiSoftwareBrains/AIBrainLandingPage";
 import CmsDevelopment from './pages/CmsDevelopment';
-import Blockchain from "./pages/Blockchain";
+import BlockchainPage from "./pages/BlockchainPage";
+
 
 // import GenerativeAI from "./pages/GenerativeAI";
 // import WebDevelopment from "./pages/WebDevelopment";
@@ -56,7 +57,7 @@ const App = () => {
         />
         <Route
           path="/blockchain"
-          element={<Blockchain />}
+          element={<BlockchainPage />}
         />
         <Route
           path="/cmsdevelopment"
