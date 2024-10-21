@@ -42,7 +42,7 @@ const SubService = () => {
             <div
               key={index}
               data-aos="fade-up"
-              className="rounded-[40px] border-2 border-black p-1 w-full sm:w-auto md:w-auto lg:w-[calc(25% - 20px)] max-w-[300px] h-auto mx-2 mb-5"
+              className="rounded-[40px] border-[5px] border-black p-1 w-full sm:w-auto md:w-auto lg:w-[calc(25% - 20px)] max-w-[300px] h-auto mx-2 mb-5"
             >
               <div className="flex flex-col justify-center items-center bg-white h-full w-full rounded-[36px]">
                 <div className="px-2 relative flex flex-col items-center justify-center py-[16px] space-y-3 z-20">

@@ -17,7 +17,7 @@ const Technologies = () => {
 
         <div className="flex flex-col justify-center items-center">
           <h1
-            className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black"
+            className=" font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black"
           >
             TECHNOLOGIES
             <br /> WE WORK WITH

@@ -7,6 +7,8 @@ import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import SubService from "../components/FullStackDevelopment/SubService";
 import Technologies from "../components/FullStackDevelopment/Technologies";
+import Casestudy from './CasePage'
+import ExplorePage from './ExplorePage'
 
 const FullStackWebDevelopment = () => {
   return (
@@ -15,9 +17,10 @@ const FullStackWebDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      
+      <Casestudy/>
       <OurSolution />
       <FAQS />
+      <ExplorePage/>
       <Reviews />
     </div>
   );

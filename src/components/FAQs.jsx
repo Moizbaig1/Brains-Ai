@@ -22,7 +22,7 @@ const FAQS = () => {
 
         <div className="flex flex-col justify-center items-center">
           <h1
-            className="font-varino xl:px-36 lg:px-44 md:px-24 px-10 text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black" // Change text color to black
+            className="mt-10 font-varino xl:px-36 lg:px-44 md:px-24 px-10 text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] text-black" // Change text color to black
             style={{
               background: "none", // Set to none to keep it simple
             }}

@@ -6,6 +6,8 @@ import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import SubService from "../components/MobileAppDevelopment/SubService";
 import Technologies from "../components/MobileAppDevelopment/Technologies";
+import Casestudy from './CasePage'
+import ExplorePage from './ExplorePage'
 
 const MobileAppDevelopment = () => {
   return (
@@ -14,9 +16,10 @@ const MobileAppDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
-      
+      <Casestudy/>
       <OurSolution />
       <FAQS />
+      <ExplorePage/>
       <Reviews />
     </div>
   );
