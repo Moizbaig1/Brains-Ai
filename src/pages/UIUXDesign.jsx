@@ -18,6 +18,7 @@ const UIUXDesign = () => {
       <OurSolution />
       <FAQS />
       <Reviews />
+      {/* end  */}
     </div>
   );
 };
