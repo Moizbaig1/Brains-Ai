@@ -32,6 +32,7 @@ const Banner = () => {
             >
               {item.description}
             </p>
+            
          
            
           </div>

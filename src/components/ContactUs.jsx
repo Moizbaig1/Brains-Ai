@@ -66,7 +66,7 @@ const ContactUs = () => {
       </div> */}
 
       {/* Contact Us Section */}
-      <section className="relative snap-center flex flex-col space-y-4 items-center mt-10 sm:mt-16 lg:mt-20 bg-white text-black">
+      <section className="relative snap-center flex flex-col space-y-4 items-center mt-10 sm:mt-16 lg:mt-0 bg-white text-black">
         {/* Right Gradient */}
         <div className="absolute right-0 bottom-0">
           <img className="xl:w-full -z-20" alt="right gradient" src={RightGradient} />

@@ -7,6 +7,7 @@ import UIUX from "../../../public/images/detailpagesimages/uiuxdesign.png";
 import Saas from "../../../public/images/detailpagesimages/saasdevelopment.png";
 import Wordpress from "../../../public/images/detailpagesimages/wordpressimage.png";
 import CMS from  "../../../public/images/detailpagesimages/cmsLandingImg.png"
+import Web from "../../../public/images/detailpagesimages/metaverse.png";
 
 export const GenAi = [
   {
@@ -95,5 +96,23 @@ export const CmsDevelopment = [
     description:
       "Raise your online presence with our modified CMS solutions that propel businesses into the digital forefront. Our agency specializes in spearheading comprehensive digital transformations, empowering you to seize new opportunities and unlock unprecedented growth. With a robust online footprint crafted through our expertise, you can captivate audiences, streamline operations, and outmaneuver competitors in the ever-evolving digital landscape. Unlock the full potential of your enterprise by harnessing the power of our custom CMS solutions, meticulously designed to catalyze your digital ascension.",
     img:CMS ,
+  },
+];
+
+export const AIBrain = [
+  {
+    heading: "AI SOFTWARE BRAINS",
+    description:
+      "AI Software Brains is an artificial intelligence-powered robot that, once installed on a PC (Mac or Windows), acts as a highly autonomous development assistant. This AI communicates via WhatsApp and can manage all aspects of a web, software, or marketing project with minimal human intervention.",
+    img:Web ,
+  },
+];
+
+export const AIMarket = [
+  {
+    heading: "AI MARKETING PLUGIN",
+    description:
+      "The AI Marketing Plugin is an all-in-one solution that combines SEO AI and Media Press AI to provide comprehensive marketing support. It automates off-page SEO optimization and media outreach, enhancing both search engine rankings and global visibility.",
+    img:Web ,
   },
 ];

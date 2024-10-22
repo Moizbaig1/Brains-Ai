@@ -87,7 +87,7 @@ const MissionAndVision = () => {
                 data-aos="fade-up"
                 src={vision}
                 alt="helping grow"
-                className="rounded-3xl bg-gradient-to-r from-[#EC66B7] to-[#2D5887] p-1 w-[100%] max-w-[534px] h-auto"
+                className="rounded-3xl border boder-4 p-1 w-[100%] max-w-[534px] h-auto"
               />
             </div>
           </div>
@@ -98,3 +98,5 @@ const MissionAndVision = () => {
 };
 
 export default MissionAndVision;
+
+// bg-gradient-to-r from-[#EC66B7] to-[#2D5887]
