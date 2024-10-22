@@ -6,6 +6,8 @@ import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import SubService from "../components/Blockchain/SubService";
 import Technologies from "../components/Blockchain/Technologies";
+import Casestudy from './CasePage'
+import ExplorePage from './ExplorePage'
 
 export default function BlockchainPage() {
   return (
@@ -14,9 +16,10 @@ export default function BlockchainPage() {
       <SubService />
       <Workflow />
       <Technologies />
-      {/* hell0 */}
+      <Casestudy/>
       <OurSolution />
       <FAQS />
+      <ExplorePage/>
       <Reviews />
     </div>
   )

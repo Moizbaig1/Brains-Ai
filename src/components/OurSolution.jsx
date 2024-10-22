@@ -35,7 +35,7 @@ const OurSolution = () => {
 
         <div className="flex flex-col justify-center items-center">
           <h1
-            className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px]"
+            className="font-varino text-[25px] xl:text-[54px] text-center capitalize lg:leading-[35px] xl:leading-[60px] mt-10"
             style={{
               background: "linear-gradient(to bottom, white, gray)",
               WebkitBackgroundClip: "text",

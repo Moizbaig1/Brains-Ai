@@ -6,6 +6,8 @@ import FAQS from "../components/FAQs";
 import OurSolution from "../components/OurSolution";
 import SubService from "../components/UIUXDesign/SubService";
 import Technologies from "../components/UIUXDesign/Technologies";
+import Casestudy from './CasePage'
+import ExplorePage from './ExplorePage'
 
 const WordpressPluginDevelopment = () => {
   return (
@@ -14,8 +16,10 @@ const WordpressPluginDevelopment = () => {
       <SubService />
       <Workflow />
       <Technologies />
+      <Casestudy/>
       <OurSolution />
       <FAQS />
+      <ExplorePage/>
       <Reviews />
     </div>
   );
