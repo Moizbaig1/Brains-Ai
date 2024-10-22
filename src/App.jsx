@@ -15,11 +15,11 @@ import WebAndMetawerse from "./pages/WebAndMetawerse";
 import UIUXDesign from "./pages/UIUXDesign";
 import SaasApplication from "./pages/SaasApplication";
 import WordpressPluginDevelopment from "./pages/WordpressPluginDevelopment";
-import AIMarketingLandingPage from "./components/AiSoftwareBrains/AIMarketingLandingPage";
-import AIBrainLandingPage from "./components/AiSoftwareBrains/AIBrainLandingPage";
+// import AIMarketingLandingPage from "./components/AiSoftwareBrains/AIMarketingLandingPage";
+// import AIBrainLandingPage from "./components/AiSoftwareBrains/AIBrainLandingPage";
 import CmsDevelopment from './pages/CmsDevelopment';
 import BlockchainPage from "./pages/BlockchainPage";
-
+import AiMarketingPlugin from "./pages/AiMarketingPlugin";
 
 // import GenerativeAI from "./pages/GenerativeAI";
 // import WebDevelopment from "./pages/WebDevelopment";
@@ -37,8 +37,8 @@ const App = () => {
         <Route path="/AiSoftwareBrains" element={<AiSoftwareBrains />} />
         <Route path="/getQuotes" element={<Book />} />
         <Route path="/generativeai" element={<GenerativeAI />} />
-        <Route path = "/AiBrainLandingPage" element = {<AIBrainLandingPage/>}/>
-        <Route path='/AiMarketingLandingPage'  element = {<AIMarketingLandingPage/>}/>
+        
+        <Route path='/AiMarketingPlugin'  element = {<AiMarketingPlugin/>}/>
         <Route
           path="/fullstackdevelopment"
           element={<FullStackWebDevelopment />}

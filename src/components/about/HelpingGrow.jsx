@@ -82,7 +82,7 @@ const HelpingGrow = () => {
               <img
                 src={helpImg}
                 alt="helping grow"
-                className="rounded-3xl bg-gradient-to-r from-[#EC66B7] to-[#2D5887] p-1 w-[80%] max-w-[400px] h-auto"
+                className="rounded-3xl border-2  p-1 w-[80%] max-w-[400px] h-auto"
               />
             </div>
 

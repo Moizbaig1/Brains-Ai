@@ -35,7 +35,7 @@ const PreviewSection = () => {
               decisions and boost efficiency.
             </p>
             <Link
-              to="/AiBrainLandingPage"
+              to="/AiSoftwareBrains"
               className="bg-transparent border-2 border-white text-white py-2 px-4 rounded-full transition duration-300 hover:bg-blue-700 mt-10"
             >
               Features and Benefits
@@ -73,7 +73,7 @@ const PreviewSection = () => {
               rates, all powered by advanced AI technology.
             </p>
             <Link
-              to="/AiMarketingLandingPage"
+              to="/AiMarketingPlugin"
               className="border-2 border-black rounded-full bg-transparent text-black py-2 px-4 hover:bg-white hover:text-black transition"
             >
               Explore More
