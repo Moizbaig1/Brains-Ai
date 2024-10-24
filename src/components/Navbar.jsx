@@ -133,10 +133,10 @@ const Navbar = () => {
     <nav>
       <div className="max-w-screen-xl z-10 flex flex-wrap items-center justify-between mx-auto  p-4">
         <Link to="/">
-          <img
+        <img
             src={logo}
             alt="logo"
-            className="w-auto h-auto max-w-[120px] sm:max-w-[130px] max-h-[50px] rounded-full ms-5 object-cover"
+            className="w-[80px] h-[78px] max-w-[120px] sm:max-w-[130px] rounded-full ms-5 object-cover"
           />
         </Link>
 
@@ -163,7 +163,7 @@ const Navbar = () => {
             <div className="block lg:hidden">
               <Link
                 to="/getQuotes"
-                className="bg-[#FFFFFF] text-black px-[30px] py-[7px] rounded-3xl me-3"
+                className="bg-[#FFFFFF] text-black text-center px-[30px] py-[7px] rounded-3xl me-3 w-[169px] h-[56px]  pt-4"
               >
                 Get A Quote
               </Link>
@@ -172,7 +172,7 @@ const Navbar = () => {
         </div>
 
         <Link to="/getQuotes" className="lg:block hidden">
-          <div className="bg-[#FFFFFF] text-black px-[30px] py-[7px] rounded-3xl me-3 ">
+          <div className="bg-[#FFFFFF] text-black px-[30px] py-[7px] rounded-3xl me-3 w-[169px] h-[56px] text-center pt-4 ">
             Get A Quote
           </div>
         </Link>
@@ -265,7 +265,7 @@ const Links = ({ menuRef, location, more, SettingMenu }) => {
       {links.map(({ name, path }) => (
         <div
           key={name}
-          className="relative z-[99999999999999999999999]"
+          className="relative z-[99999999999999999999999] font-poppins"
           ref={name === "Services" ? menuRef : null}
         >
           {name === "Services" ? (

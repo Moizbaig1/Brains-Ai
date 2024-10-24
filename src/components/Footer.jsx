@@ -95,24 +95,24 @@ const Footer = () => {
                 <img
                   src={Logo}
                   alt="logo"
-                  className="w-auto h-auto max-w-[120px] sm:max-w-[130px] max-h-[60px] rounded-full mb-5"
+                  className="w-[80px] h-[78] max-w-[120px] sm:max-w-[130px] max-h-[60px] rounded-full mb-5 object-cover"
                 />
                 <div className="flex flex-col justify-start items-center gap-3">
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <PiPhoneCall className="text-[60px] text-white" />
+                    <PiPhoneCall className="text-[30px] text-white" />
                     <div className="text-white text-md font-medium font-monosans">
                       +92 346 3164772
                     </div>
                   </div>
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <IoMdTime className="text-[60px] text-white" />
-                    <div className="text-white font-medium font-monosans">
+                    <IoMdTime className="text-[30px] text-white" />
+                    <div className="text-white font-medium font-monosans ms-1">
                       Mon-Sat: 9am - 5pm
                     </div>
                   </div>
                   <div className="justify-start items-center gap-5 inline-flex w-full">
-                    <MdOutlineMarkEmailRead className="text-[50px] text-white font-light ms-2" />
-                    <div className="text-white text-md font-medium font-monosans ml-[5px]">
+                    <MdOutlineMarkEmailRead className="text-[30px] text-white font-light " />
+                    <div className="text-white text-md font-medium font-monosans ml-[4px]">
                       brain.ai@gmail.com
                     </div>
                   </div>

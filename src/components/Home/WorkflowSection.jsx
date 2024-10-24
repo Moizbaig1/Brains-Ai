@@ -23,22 +23,21 @@ const WorkflowSection = () => {
         {/* Why Choose Us Section */}
         <div className="flex flex-col items-center space-y-6 sm:space-y-8 lg:space-y-10">
           <div className="flex flex-col space-y-3 sm:space-y-4 items-center">
-            <h1 
-            data-aos="fade-up"
-            className="font-varino text-[26px] sm:text-[38px] lg:text-[60px] xl:text-[65px] text-center text-black">
-            
+            <h1
+              data-aos="fade-up"
+              className="font-varino text-[30px] sm:text-[42px] lg:text-[64px] xl:text-[65px] text-center text-black mt-2"
+            >
               OUR WORK FLOW
             </h1>
-            <p
-             className="text-[14px] sm:text-[16px] xl:text-[18px] lg:text-[18px] text-center font-monosans text-gray-600 font-extralight w-[90%] md:w-8/12 xl:w-full">
+            <p className="text-[16px] sm:text-[18px] xl:text-[20px] lg:text-[22px] text-center font-monosans text-gray-800 font-extralight w-[90%] md:w-10/12 xl:w-full mb-4">
               Our Professional Workflow, Certifications, Awards, and Numbers
               Prove the Quality We Offer.
             </p>
           </div>
 
           <img
-          data-aos="fade-up"
-            className="w-[320px] sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1000px] object-contain select-none"
+            data-aos="fade-up"
+            className="w-[320px] sm:w-[600px] md:w-[850px] lg:w-[1000px] xl:w-[1000px] object-contain select-none !mt-24"
             alt="Workflow Image"
             src="/images/workflowImages/workflow.png"
           />

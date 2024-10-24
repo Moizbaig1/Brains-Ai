@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         mona: ["MonaSans", "sans-serif"],
         varino: ["Varino", "serif"],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

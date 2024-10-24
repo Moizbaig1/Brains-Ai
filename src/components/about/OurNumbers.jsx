@@ -30,8 +30,8 @@ const OurNumbers = () => {
         <div className="h-full flex flex-col justify-between items-center space-y-12 lg:space-y-24 xl:space-y-24">
           <h1
            data-aos="fade-up"
-           className="font-varino text-[26px] sm:text-[38px] lg:text-[60px] xl:text-[65px] text-center text-black mt-10 mb-12">
-            ACHIEVEMENTS
+           className="font-varino text-[24px] sm:text-[34px] lg:text-[48px] xl:text-[60px] text-center text-black mt-10 mb-12">
+             OUR   ACHIEVEMENTS
           </h1>
 
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -45,7 +45,7 @@ const OurNumbers = () => {
                   {counterOn && <CountUp start={0} end={4} duration={2} />}.
                   {counterOn && <CountUp start={0} end={8} duration={2} />} B+
                 </p>
-                <p className="xl:text-[20px] lg:text-[20px] text-[10px] text-center">REVENUE GENERATED</p>
+                <p className="xl:text-[20px] lg:text-[20px] text-[14px] text-center font-poppins">REVENUE GENERATED</p>
               </div>
 
               {/* Projects Completed */}
@@ -53,7 +53,7 @@ const OurNumbers = () => {
                 <p className="text-[22px] xl:text-[60px] lg:text-[60px] font-monosans font-extrabold">
                   {counterOn && <CountUp start={0} end={1000} duration={2} />}+
                 </p>
-                <p className="xl:text-[20px] lg:text-[20px] text-[10px] text-center">PROJECTS COMPLETED</p>
+                <p className="xl:text-[20px] lg:text-[20px] text-[14px] text-center font-poppins">PROJECTS COMPLETED</p>
               </div>
 
               {/* In-House Developers */}
@@ -61,7 +61,7 @@ const OurNumbers = () => {
                 <p className="text-[22px] xl:text-[60px] lg:text-[60px] font-monosans font-extrabold">
                   {counterOn && <CountUp start={0} end={100} duration={2} />}+
                 </p>
-                <p className="xl:text-[20px] lg:text-[20px] text-[10px] text-center">IN-HOUSE DEVELOPERS</p>
+                <p className="xl:text-[20px] lg:text-[20px] text-[14px] text-center font-poppins">IN-HOUSE DEVELOPERS</p>
               </div>
 
               {/* Client Satisfaction */}
@@ -69,7 +69,7 @@ const OurNumbers = () => {
                 <p className="text-[22px] xl:text-[60px] lg:text-[60px] font-monosans font-extrabold">
                   {counterOn && <CountUp start={0} end={98} duration={2} />}%
                 </p>
-                <p className="xl:text-[20px] lg:text-[20px] text-[10px] text-center">CLIENT SATISFACTION</p>
+                <p className="xl:text-[20px] lg:text-[20px] text-[14px] text-center font-poppins">CLIENT SATISFACTION</p>
               </div>
             </div>
           </ScrollTrigger>

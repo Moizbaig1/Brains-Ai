@@ -42,10 +42,10 @@ const WelcomeSection = () => {
           //   color: "transparent",
           // }}
         >
-          Brains AI Inc!
+          Brains AI !
         </h1>
 
-        <p className="text-[14px] sm:text-[16px] xl:text-[18px] font-monosans text-white font-extralight w-11/12 md:w-8/12 lg:w-[78%] xl:w-10/12 my-2">
+        <p className="text-[14px] sm:text-[16px] xl:text-[18px] font-mona text-white font-extralight w-11/12 md:w-8/12 lg:w-[78%] xl:w-10/12 my-2">
           Master The Serverless Cloud To Unlock Digital Potential. Developing Concepts
            into Effective Solutions.
         </p>
@@ -60,7 +60,7 @@ const WelcomeSection = () => {
           height={900}
         />
         <div className="absolute z-[9999999999999999999999999999]  -top-2 xl:top-6 right-5 left-5 flex justify-center items-center">
-          <button className="hover:bg-gray-400 hover:bg-opacity-50 cursor-pointer transition-colors duration-300 inline-flex py-2 lg:py-3 px-5 lg:px-8 justify-center items-center gap-2 flex-shrink-0 bg-gradient-to-r rounded-full border-2 border-white border-opacity-50 shadow-xl mt-4">
+          <button className="hover:bg-gray-400 hover:bg-opacity-50 cursor-pointer transition-colors duration-300 inline-flex py-2 lg:py-3 px-5 lg:px-8 justify-center items-center gap-2 flex-shrink-0 bg-gradient-to-r rounded-full border-2 border-white border-opacity-50 shadow-xl mt-4 w-[169px] h-[56px] ">
             <span className="text-white text-[14px] sm:text-[16px] xl:text-[18px]">
               Explore More
             </span>

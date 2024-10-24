@@ -6,14 +6,14 @@ import Meta from "../../../public/images/detailpagesimages/metaverse.png";
 import UIUX from "../../../public/images/detailpagesimages/uiuxdesign.png";
 import Saas from "../../../public/images/detailpagesimages/saasdevelopment.png";
 import Wordpress from "../../../public/images/detailpagesimages/wordpressimage.png";
-import CMS from  "../../../public/images/detailpagesimages/cmsLandingImg.png"
+import CMS from "../../../public/images/detailpagesimages/cmsLandingImg.png";
 import Web from "../../../public/images/detailpagesimages/metaverse.png";
 
 export const GenAi = [
   {
     heading: "Generative AI",
     description:
-      "Experience the future with our pioneering Generative AI technologies, designed to streamline your company operations. Custom artificial intelligence solutions that make use of your one-of-a-kind data to improve productivity and simplify operations are our forte here at Brains AI. To guarantee increased productivity without the hassle of migration, our team of talented engineers is an expert at smoothly integrating the latest technologies into your company framework. These models include ChatGPT, DALL-E, and MidJourney. Our Generative AI services may change and adapt to meet your changing requirements, whether that's automating complicated processes or improving data-driven initiatives. Take the lead in innovation by empowering your organization with Brains AI.",
+      "Generative AI, a cutting-edge technology, creates diverse content autonomously. Leveraging deep neural networks, it learns patterns from vast datasets to produce novel and coherent outputs across various domains, including text, images, and music. This innovative system goes beyond traditional algorithms, demonstrating the ability to generate realistic, contextually relevant content by understanding intricate relationships within the data. Its applications range from creative content generation and art creation to language translation and even aiding in problem-solving. ",
     img: GenAI,
   },
 ];
@@ -22,7 +22,7 @@ export const FullStackDev = [
   {
     heading: "Full stack web development",
     description:
-      "When it comes to software development, Brains AI is the go-to company for both established businesses and leading-edge startups. To ensure that we not only fulfill but also exceed your project needs, our offers include a wide range of full stack services. Modifying current platforms, creating detailed designs, and carrying out complex technological integrations are our forte.With an emphasis on feature-rich interfaces, tight security measures, ideal scalability, and unparalleled speed, our engineers are experts at building strong online and mobile systems. We are well-positioned to handle all of your full stack development requirements thanks to their consistently successful track record. If you want your next project to stand out in today's competitive market, you can rely on Brains AI to provide accuracy and perfection.",
+      "As a premier full-stack development company, we specialize in delivering forefront solutions that span the entire technology stack. Our services grid front-end and back-end development, user interface design, database programming, API integration, and microservices. We also provide robust hosting solutions. Utilize our expertise, we develop high-quality web, mobile, and cloud-based applications tailored to meet the unique needs of our clients. Our result-oriented approach ensures that each project is executed with precision, aiming to exceed expectations and drive business success across various industries. Trust us to empower your digital transformation with leading-edge technology and innovative strategies.",
     img: FullStack,
   },
 ];
@@ -95,7 +95,7 @@ export const CmsDevelopment = [
     heading: "CMS Development Services",
     description:
       "Raise your online presence with our modified CMS solutions that propel businesses into the digital forefront. Our agency specializes in spearheading comprehensive digital transformations, empowering you to seize new opportunities and unlock unprecedented growth. With a robust online footprint crafted through our expertise, you can captivate audiences, streamline operations, and outmaneuver competitors in the ever-evolving digital landscape. Unlock the full potential of your enterprise by harnessing the power of our custom CMS solutions, meticulously designed to catalyze your digital ascension.",
-    img:CMS ,
+    img: CMS,
   },
 ];
 
@@ -104,7 +104,7 @@ export const AIBrain = [
     heading: "AI SOFTWARE BRAINS",
     description:
       "AI Software Brains is an artificial intelligence-powered robot that, once installed on a PC (Mac or Windows), acts as a highly autonomous development assistant. This AI communicates via WhatsApp and can manage all aspects of a web, software, or marketing project with minimal human intervention.",
-    img:Web ,
+    img: Web,
   },
 ];
 
@@ -113,6 +113,6 @@ export const AIMarket = [
     heading: "AI MARKETING PLUGIN",
     description:
       "The AI Marketing Plugin is an all-in-one solution that combines SEO AI and Media Press AI to provide comprehensive marketing support. It automates off-page SEO optimization and media outreach, enhancing both search engine rankings and global visibility.",
-    img:Web ,
+    img: Web,
   },
 ];

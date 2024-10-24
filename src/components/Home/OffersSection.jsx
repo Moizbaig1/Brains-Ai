@@ -4,10 +4,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // Import image paths directly
-import AIimage from "../../../public/images/ai.png";
+import AIimage from "../../../public/images/Service/ai.png";
 import FullStack from "../../../public/images/FullStack.png";
-import Blockchain from "../../../public/images/Blockchain.png";
-import MobileApp from "../../../public/images/MobileApp.png";
+import Blockchain from "../../../public/images/Service/Blockchain.png";
+import MobileApp from "../../../public/images/Service/MobileApp.png";
+import Cms from "../../../public/images/Service/Cms.png";
+import Digital from "../../../public/images/Service/Digital.png";
 import UIUX from "../../../public/images/UIUX.png";
 import Web3 from "../../../public/images/Web3.png";
 import SAAS from "../../../public/images/SAAS.png";
@@ -54,7 +56,7 @@ const OffersSection = () => {
     {
       id: 4,
       name: "CMS DEVELOPMENT",
-      image: WordpressImage,
+      image: Cms,
       subservice: [
         "WordPress Development",
         "eCommerce Web Development",
@@ -72,7 +74,7 @@ const OffersSection = () => {
     {
       id: 6,
       name: "DIGITAL MARKETING",
-      image: WordpressImage,
+      image: Digital,
       subservice: ["SEO", "Content Marketing"],
       link: "/digitaldevelopment",
     },
@@ -104,7 +106,7 @@ const OffersSection = () => {
         "Threat Intelligence",
         "Incident Response",
       ],
-      link: "/cybersecurity",
+      link: "/mobileappdevelopment",
     },
   ];
 
@@ -121,22 +123,15 @@ const OffersSection = () => {
 
   return (
     <>
-      {/* <div className="">
-        <img className="xl:w-full" alt="gradient1" src={Gradient1} />
-      </div> */}
-
-      <section className="relative  flex flex-col space-y-8 items-center xl:px-32 bg-white  px-5 sm:px-10 lg:px-20">
-        {/* <div className="absolute right-0 bottom-0 -z-10 animate-pulse">
-          <img className="xl:w-full" alt="gradient2" src={Gradient2} />
-        </div> */}
+      <section className="relative flex flex-col space-y-8 items-center xl:px-32 bg-white px-5 sm:px-10 lg:px-20">
         <h1
-         data-aos="fade-up"
+          data-aos="fade-up"
           className="font-varino text-[26px] sm:text-[38px] lg:text-[60px] xl:text-[65px] text-center text-black"
         >
-          SERVICES
+          Services
         </h1>
         <p
-          className="text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans text-gray-700 font-extralight w-10/12 md:w-6/12 xl:w-8/12"
+          className="text-[16px] sm:text-[20px] xl:text-[24px] text-center font-mona text-gray-700 font-extralight w-11/12 md:w-8/12 lg:w-10/12"
           data-aos="fade-up"
         >
           We Deliver Innovative Gen AI, Web 3.0, Social Media Services,
@@ -145,17 +140,22 @@ const OffersSection = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8">
-          {visibleData.map((offer) => (
+          {visibleData.map((offer, index) => (
             <div
               key={offer.id}
               data-aos="fade-up"
-              className="rounded-[40px] bg-gradient-to-b from-gray-800 to-black p-1 w-full h-[24rem] shadow-lg"
+              className={`rounded-[40px] bg-gradient-to-b from-gray-800 to-black p-1 w-full h-[24rem] shadow-lg 
+                ${index % 3 === 1 ? "mt-20" : ""}`}
             >
               <Link to={offer.link} onClick={handleLinkClick}>
                 <div className="flex flex-col justify-center items-center bg-white h-full w-full rounded-[36px]">
                   <div className="relative flex flex-col items-center justify-center py-8 space-y-4 z-20">
                     {offer.image && (
-                      <img src={offer.image} alt={offer.name} className="w-3/4" />
+                      <img
+                        src={offer.image}
+                        alt={offer.name}
+                        className="w-3/4"
+                      />
                     )}
                     <p className="font-varino text-[20px] text-center text-black">
                       {offer.name}
@@ -174,11 +174,15 @@ const OffersSection = () => {
             </div>
           ))}
         </div>
-
         <div className="w-full flex justify-center">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="mt-8 mb-12 px-8 py-3 bg-black text-white rounded-full transition-transform transform hover:scale-105"
+            className="
+      mt-8 mb-12 px-8 py-3 
+      bg-transparent border-2 border-black text-black 
+      rounded-full transition-transform transform hover:scale-105
+      hover:bg-black hover:text-white
+    "
           >
             {showAll ? "Show Less" : "Explore More"}
           </button>

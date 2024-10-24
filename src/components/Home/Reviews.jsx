@@ -42,10 +42,10 @@ const ReviewsData = [
 // Review Card Component
 const ReviewCard = ({ img, review, username, country }) => {
   return (
-    <div className="overflow-hidden scroll-containers flex-none rounded-[40px] bg-gradient-to-b from-white to-gray-600 p-[1.5px] w-[300px] lg:w-[500px] lg:h-[250px] scrollbar-none">
-      <div className="h-full flex flex-col justify-around items-center rounded-[38px] p-5 bg-[#111424]">
+    <div className="overflow-hidden scroll-containers flex-none rounded-[40px] bg-black p-[1.5px] w-[300px] lg:w-[500px] lg:h-[250px] scrollbar-none">
+      <div className="h-full flex flex-col justify-around items-center rounded-[38px] p-5 bg-[#111111]">
         <div className="w-full px-2 sm:px-4 xl:px-5">
-          <p className="font-monosans text-center text-[14px] sm:text-[16px] text-white">
+          <p className="font-poppins text-center text-[14px] sm:text-[16px] text-white">
             {review.substring(0, 80)}
           </p>
         </div>
@@ -59,7 +59,7 @@ const ReviewCard = ({ img, review, username, country }) => {
           </div>
           <div className="flex flex-col justify-center">
             <p
-              className="font-monosans text-[14px] sm:text-[18px] xl:text-[18px] text-start capitalize font-light"
+              className="font-poppins text-[14px] sm:text-[18px] xl:text-[18px] text-start capitalize font-light"
               style={{
                 background: "linear-gradient(to bottom, white, gray)",
                 WebkitBackgroundClip: "text",
@@ -69,7 +69,7 @@ const ReviewCard = ({ img, review, username, country }) => {
               {username}
             </p>
             <p
-              className="font-monosans text-[14px] sm:text-[18px] xl:text-[18px] text-center capitalize font-light"
+              className="font-poppins text-[14px] sm:text-[18px] xl:text-[18px] text-center capitalize font-light"
               style={{
                 background: "linear-gradient(to bottom, white, gray)",
                 WebkitBackgroundClip: "text",
@@ -131,10 +131,10 @@ const Reviews = () => {
               color: "transparent",
             }}
           > */}
-          <h1 className="font-varino text-2xl sm:text-3xl lg:text-5xl xl:text-6xl text-center text-white mb-8">
+          <h1 className="font-varino text-2xl sm:text-3xl lg:text-[64px] xl:text-6xl text-center text-white mb-8">
             REVIEWS
           </h1>
-          <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-center font-monosans text-white font-extralight w-10/12 md:w-8/12 xl:w-8/12">
+          <p className="text-[14px] sm:text-[16px] lg:text-[18px] text-center font-mona text-gray-300 font-extralight w-10/12 md:w-8/12 xl:w-8/12">
             Client Voices: See why we are praised for our innovative,
             user-focused technology solutions. Verified reviews highlight our
             profoundly positive effects.

@@ -72,7 +72,7 @@ const Contact = () => {
               <br />
               brain.ai@gmail.com
             </p>
-            <p className="mt-4 ms-5">
+            <p className="mt-4 ms-8">
               <strong>Contact On Phone/Whatsapp</strong>
               <br />
               +92 346 3164772

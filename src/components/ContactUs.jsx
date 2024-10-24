@@ -69,14 +69,18 @@ const ContactUs = () => {
       <section className="relative snap-center flex flex-col space-y-4 items-center mt-10 sm:mt-16 lg:mt-0 bg-white text-black">
         {/* Right Gradient */}
         <div className="absolute right-0 bottom-0">
-          <img className="xl:w-full -z-20" alt="right gradient" src={RightGradient} />
+          <img
+            className="xl:w-full -z-20"
+            alt="right gradient"
+            src={RightGradient}
+          />
         </div>
 
         {/* Title and Description */}
         <div className="flex flex-col justify-center items-center">
           <h1
             data-aos="fade-up"
-           className="font-varino mt-20 text-[22px] sm:text-[28px] lg:text-[50px] xl:text-[55px] text-center text-black leading-tight"
+            className="font-varino mt-20 text-[22px] sm:text-[28px] lg:text-[50px] xl:text-[55px] text-center text-black leading-tight"
             // style={{
             //   background: "linear-gradient(to bottom, white, gray)",
             //   WebkitBackgroundClip: "text",
@@ -87,7 +91,7 @@ const ContactUs = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="mt-1 sm:mt-2 text-[14px] sm:text-[16px] xl:text-[18px] text-center font-monosans font-extralight w-10/12 md:w-[60%] xl:w-[65%]"
+            className="mt-1 sm:mt-2 text-[14px] sm:text-[18px] xl:text-[24px] text-center font-mona font-extralight w-10/12 md:w-[60%] xl:w-[65%] text-gray-800"
           >
             Connect with us for personalized solutions. Your gateway to
             innovation inquiries, collaborations, and support. Let&apos;s create
@@ -102,7 +106,7 @@ const ContactUs = () => {
             className="flex justify-center items-center mt-6 sm:mt-10 lg:mt-0"
             data-aos="fade-up"
           >
-            <img className="w-full max-w-[27.5rem]" src={globe} alt="globe" />
+            <img className="w-[440px] h-[437px]" src={globe} alt="globe" />
           </div>
 
           {/* Form Section */}
@@ -118,7 +122,7 @@ const ContactUs = () => {
                   <div className="flex flex-col gap-1">
                     <label
                       htmlFor="name"
-                      className="text-center py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
+                      className="text-left py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
                     >
                       Name
                     </label>
@@ -128,7 +132,7 @@ const ContactUs = () => {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       type="text"
-                      className="rounded-3xl border border-black px-6 py-3 w-full bg-transparent text-black focus:border-black focus:outline-none font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
+                      className="rounded-3xl border border-black px-6 py-3 w-full bg-transparent text-gray-800 focus:border-black focus:outline-none font-mona text-[16px] sm:text-[16px] lg:text-[18px]"
                       placeholder="Your Name"
                       required
                     />
@@ -138,7 +142,7 @@ const ContactUs = () => {
                   <div className="flex flex-col gap-1">
                     <label
                       htmlFor="email"
-                      className="text-center py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
+                      className="text-left py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
                     >
                       Email
                     </label>
@@ -148,7 +152,7 @@ const ContactUs = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
-                      className="rounded-3xl border border-black px-6 py-3 w-full bg-transparent focus:border-black focus:outline-none text-black font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
+                      className="rounded-3xl border border-black px-6 py-3 w-full bg-transparent focus:border-black focus:outline-none  text-gray-800 font-mona text-[16px] sm:text-[16px] lg:text-[18px]"
                       placeholder="Email Address"
                       required
                     />
@@ -158,7 +162,7 @@ const ContactUs = () => {
                   <div className="flex flex-col gap-1">
                     <label
                       htmlFor="message"
-                      className="text-center py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
+                      className="text-left py-2 text-base sm:text-lg font-normal font-varino capitalize leading-normal"
                     >
                       Type Message
                     </label>
@@ -168,7 +172,7 @@ const ContactUs = () => {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       rows={5}
-                      className="rounded-3xl border border-black px-4 py-3 w-full bg-transparent focus:border-black focus:outline-none text-black font-monosans text-[14px] sm:text-[16px] lg:text-[18px]"
+                      className="rounded-3xl border border-black px-4 py-3 w-full bg-transparent focus:border-black focus:outline-none  text-gray-800 font-mona text-[16px] sm:text-[16px] lg:text-[18px]"
                       placeholder="Message"
                       required
                     />
